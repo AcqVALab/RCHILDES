@@ -1,0 +1,317 @@
+---
+title: "Working with the Child Language Data Exchange System (CHILDES) using R"
+author: "Martin Schweinberger"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  html_document:
+    theme: cosmo
+    highlight: tango
+bibliography: bibliography.bib
+link-citations: yes
+---
+
+```{r acqva1, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%'}
+knitr::include_graphics("https://slcladal.github.io/images/acqva.jpg")
+```
+
+# Introduction{-}
+
+This tutorial shows how you can analyze CHILDES data using the `chiles` package.
+
+# Preparation{-}
+
+We prepare the session by setting option, installing and loading packages.
+
+```{r prep1, eval = T, echo = T, message=F, warning=F}
+# set options
+options(stringsAsFactors = F)          # no automatic data transformation
+options("scipen" = 100, "digits" = 12) # suppress math annotation
+options(max.print=1000)                # show maximally 1000 elements in the output
+# installing packages
+#install.packages("tidyverse")
+#install.packages("flextable")
+#install.packages("knitr")
+#install.packages("here")
+#install.packages("remotes")
+#remotes::install_github("gracelawley/childes")
+# load packages
+library(tidyverse)
+library(flextable)
+library(knitr)
+library(here)
+library(childes)
+```
+
+We now load and inspect CHILDES data that is provided in the CHILDES package.
+
+```{r loaddata, eval = T, echo = T, message=F, warning=F}
+cdat <- childes::childes_utterances
+# inspect
+head(cdat)
+```
+
+We will simplify the age by rounding it to 2 decimals and we will add the length of utterances.
+
+```{r clean, eval = T, echo = T, message=F, warning=F}
+cdat <- cdat %>%
+  dplyr::mutate(age = round(age, 1),
+                words = sapply(gregexpr("[[:alpha:]]+", utterance), function(x) sum(x > 0)))
+# inspect
+head(cdat)
+```
+
+
+Show the distribution of age in the cdat data.
+
+```{r}
+plot(cdat$age, ylab = "Age of child in months")
+```
+
+Save this table on your computer.
+
+```{r childes_01_39, message=F, warning=F}
+base::saveRDS(cdat, file = here::here("data", "childes_EngNA.rda"))
+```
+
+# Saving corpora in seperate txt files
+
+```{r}
+table(cdat$corpus)
+```
+
+```{r}
+bloom70 <- cdat %>%
+  dplyr::filter(corpus == "Bloom70") %>%
+  dplyr::mutate(id = 1:nrow(.))
+braunwald <- cdat %>%
+  dplyr::filter(corpus == "Braunwald") %>%
+  dplyr::mutate(id = 1:nrow(.))
+brown  <- cdat %>%
+  dplyr::filter(corpus == "Brown") %>%
+  dplyr::mutate(id = 1:nrow(.))
+clark  <- cdat %>%
+  dplyr::filter(corpus == "Clark") %>%
+  dplyr::mutate(id = 1:nrow(.))
+ellisWeismer  <- cdat %>%
+  dplyr::filter(corpus == "EllisWeismer") %>%
+  dplyr::mutate(id = 1:nrow(.))
+hall  <- cdat %>%
+  dplyr::filter(corpus == "Hall") %>%
+  dplyr::mutate(id = 1:nrow(.))
+kuczaj  <- cdat %>%
+  dplyr::filter(corpus == "Kuczaj") %>%
+  dplyr::mutate(id = 1:nrow(.))
+macwhinney  <- cdat %>%
+  dplyr::filter(corpus == "MacWhinney") %>%
+  dplyr::mutate(id = 1:nrow(.))
+sachs  <- cdat %>%
+  dplyr::filter(corpus == "Sachs") %>%
+  dplyr::mutate(id = 1:nrow(.))
+suppes  <- cdat %>%
+  dplyr::filter(corpus == "Suppes") %>%
+  dplyr::mutate(id = 1:nrow(.))
+warren  <- cdat %>%
+  dplyr::filter(corpus == "Warren") %>%
+  dplyr::mutate(id = 1:nrow(.))
+weist  <- cdat %>%
+  dplyr::filter(corpus == "Weist") %>%
+  dplyr::mutate(id = 1:nrow(.))
+```
+
+
+Save corpora to disc.
+
+```{r}
+write.table(bloom70, here::here("data", "EngNA_Bloom70.txt"), sep = "\t", row.names = F)
+write.table(braunwald, here::here("data", "EngNA_Braunwald.txt"), sep = "\t", row.names = F)
+write.table(brown, here::here("data", "EngNA_Brown.txt"), sep = "\t", row.names = F)
+write.table(clark, here::here("data", "EngNA_Clark.txt"), sep = "\t", row.names = F)
+write.table(ellisWeismer, here::here("data", "EngNA_EllisWeismer.txt"), sep = "\t", row.names = F)
+write.table(hall, here::here("data", "EngNA_Hall.txt"), sep = "\t", row.names = F)
+write.table(kuczaj, here::here("data", "EngNA_Kuczaj.txt"), sep = "\t", row.names = F)
+write.table(macwhinney, here::here("data", "EngNA_MacWhinney.txt"), sep = "\t", row.names = F)
+write.table(sachs, here::here("data", "EngNA_Sachs.txt"), sep = "\t", row.names = F)
+write.table(suppes, here::here("data", "EngNA_Suppes.txt"), sep = "\t", row.names = F)
+write.table(warren, here::here("data", "EngNA_Warren.txt"), sep = "\t", row.names = F)
+write.table(weist, here::here("data", "EngNA_Weist.txt"), sep = "\t", row.names = F)
+```
+
+
+
+# Case studies
+
+Now that we have the data in a format that we can use, we can use this table to perform searches. If you store that file in your `data` folder, you can load it by executing the code chunk below.
+
+```{r childes_01_40b, message=F, warning=F}
+cdat <- base::readRDS(here::here("data", "childes_EngNA.rda"))
+# inspect data
+cdat[1:3, 1:4]
+```
+
+
+## Example 1: Extract uses of the word "No" by children in one corpus{-}
+
+Check which corpora are represented in the table.
+
+```{r childes_01_01, message=F, warning=F}
+table(cdat$corpus) 
+```
+
+We select the `Brown` corpus (also, it should be noted that two corpora do not contain any utterances!).
+
+
+```{r childes_01_01, message=F, warning=F}
+brown <- cdat %>%
+  dplyr::filter(corpus == "Brown")
+# inspect data
+head(brown)
+```
+
+To extract all instances of a single word, in this example the word *no*, that are uttered by a specific interlocutor we filter by speaker and define that we only want rows where the speaker is equal to `CHI` (target child).
+
+
+```{r childes_01_41, message=F, warning=F}
+no <- brown %>%
+  dplyr::filter(stringr::str_detect(utterance, "\\b[Nn][oo]\\b")) 
+```
+
+
+```{r childes_01_42, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(no)) %>%
+  flextable::autofit()
+```
+
+We summarize the results in a table. 
+
+```{r childes_01_43, message=F, warning=F}
+no_no <- no %>%
+  dplyr::group_by(transcript_id, age) %>%
+  dplyr::summarise(nos = nrow(.))
+head(no_no)
+```
+
+
+We can also extract the number of words uttered by children to check if the use of *no* shows a relative increase or decrease over time.
+
+```{r childes_01_44, message=F, warning=F}
+no_words <- brown %>%
+  dplyr::group_by(transcript_id, age) %>%
+  dplyr::mutate(nos = stringr::str_detect(utterance, "\\b[Nn][Oo]\\b")) %>%
+  dplyr::summarise(nos = sum(nos),
+                   words = sum(words)) %>%
+  # add relative frequency
+  dplyr::mutate(freq = round(nos/words*1000, 3))
+# inspect data
+head(no_words)
+```
+
+We can also visualize the trends using the `ggplot` function . To learn how to visualize data in R see [this tutorial](https://slcladal.github.io/dviz.html).
+
+```{r childes_01_45, message=F, warning=F}
+no_words %>%
+  dplyr::mutate(age = as.numeric(age)) %>%
+  ggplot(aes(x = age, y = freq)) +
+  geom_smooth() +
+  theme_bw() +
+  labs(x = "Age of target child in months", y = "Relative frequency of NOs \n (per 1,000 words)")
+```
+
+
+
+
+## Example 2: Does the type-token ratio of the output of children change as they mature? {-}
+
+Here we extract all tokens (words with repetition) and types (words without repetition) uttered by children by age and then see if the type-token ratio changes over time.
+
+In a first step, we create a table with the age of the children in years, we then collapse all utterances of the children into one long utterance and then clean this long utterance by removing digits and superfluous white spaces.
+
+```{r childes_01_62, message=F, warning=F}
+utterance_tb <- cdat %>%
+  dplyr::group_by(age, transcript_id) %>%
+  dplyr::summarise(allutts = paste0(utterance, collapse = " ")) %>%
+  dplyr::ungroup() %>%
+  dplyr::mutate(age = as.numeric(age),
+                # clean utterance
+                allutts = stringr::str_replace_all(allutts, "\\[.*?\\]", " "),
+                allutts = stringr::str_replace_all(allutts, "\\W", " "),
+                allutts = stringr::str_replace_all(allutts, "\\d", " "),
+                allutts = stringr::str_remove_all(allutts, "xxx"),
+                allutts = stringr::str_remove_all(allutts, "zzz"),
+                allutts = tolower(allutts)) %>%
+  # remove superfluous white spaces
+  dplyr::mutate(allutts = gsub(" {2,}", " ", allutts)) %>%
+  dplyr::mutate(allutts = stringr::str_squish(allutts))
+# inspect data
+head(utterance_tb)
+```
+
+Extract the number of tokens, the number of types and calculating the type-token ratio.
+
+```{r childes_01_63, message=F, warning=F}
+tokens <- stringr::str_count(utterance_tb$allutts, " ") +1
+types <- stringr::str_split(utterance_tb$allutts, " ")
+types <- sapply(types, function(x){
+  x <- length(names(table(x)))
+})
+ttr <- utterance_tb %>%
+  dplyr::mutate(tokens = tokens,
+                types = types) %>%
+  dplyr::select(-allutts) %>%
+  dplyr::mutate(TypeTokenRatio = round(types/tokens, 3))
+# inspect 
+ttr
+```
+
+Plot the type-token ratio against age of the target child.
+
+```{r childes_01_64, message=F, warning=F}
+ttr %>%
+  ggplot(aes(x = age, y = TypeTokenRatio)) +
+  geom_smooth() +
+  coord_cartesian(ylim = c(0, 0.75)) +
+  theme_bw() +
+  labs(x = "Age of target child", y = "Type-Token Ratio")
+```
+
+# Saving data to your computer{-}
+
+To save results on your computer, you can use the `write.table` function as shown below.
+
+```{r childes_01_65, message=F, warning=F}
+write.table(ttr, here::here("tables", "ttr_EngNA.txt"), sep = "\t", row.names = F)
+```
+
+
+***
+
+# Citation & Session Info {-}
+
+Schweinberger, Martin. `r format(Sys.time(), '%Y')`. *Working with the Child Language Data Exchange System (CHILDES) using R*. Tromsø: The Artic University of Norway. url: https://slcladal.github.io/mmws.html (Version `r format(Sys.time(), '%Y.%m.%d')`).
+
+```
+@manual{schweinberger`r format(Sys.time(), '%Y')`mmws,
+  author = {Schweinberger, Martin},
+  title = {Working with the Child Language Data Exchange System (CHILDES) using R},
+  note = {https://slcladal.github.io/mmws.html},
+  year = {2021},
+  organization = "Arctic University of Norway, AcqVA Aurora Center},
+  address = {Tromsø},
+  edition = {`r format(Sys.time(), '%Y.%m.%d')`}
+}
+```
+
+```{r fin}
+sessionInfo()
+```
+
+
+***
+
+[Back to top](#introduction)
+
+***
+
+
+
+

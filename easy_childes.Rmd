@@ -1,0 +1,339 @@
+---
+title: "Working with the Child Language Data Exchange System (CHILDES) using R"
+author: "Martin Schweinberger"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  html_document:
+    theme: cosmo
+    highlight: tango
+bibliography: bibliography.bib
+link-citations: yes
+---
+
+```{r acqva1, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%'}
+knitr::include_graphics("https://slcladal.github.io/images/acqva.jpg")
+```
+
+# Introduction{-}
+
+This Notebook shows how you 
+
+* can load a table containing CHILDES data
+
+* find specific words (with and without regular expressions), 
+
+* filter the results (to exclude lines that you do not want)
+
+* can visualize the results 
+
+* save the results to your computer
+
+# Preparation{-}
+
+In a first step, we prepare the session which means that we 
+
+* set options, 
+
+* install packages that we will need
+
+* load the packages
+
+Options are there to tell R how to *do things*. For example, the command `options(stringsAsFactors = F) ` prevents R from converting strings (text) into factors (don't worry about what factors are at this point). Packages need to be installed because R comes in a basic version and if we want to do something more fancy, then we need to install add-ons (packages). Packages only to to be installed once - so you do not need to install them again when you have installed a package once. 
+
+
+```{r prep1, message=F, warning=F}
+# set options
+options(stringsAsFactors = F)          # no automatic data transformation
+options("scipen" = 100, "digits" = 12) # suppress math annotation
+options(max.print=1000)                # show maximally 1000 elements in the output
+# install packages
+#install.packages("tidyverse")
+#install.packages("flextable")
+#install.packages("knitr")
+#install.packages("here"))
+# load packages
+library(tidyverse)
+library(flextable)
+library(knitr)
+library(here)
+```
+
+
+# Loading data
+
+Next, we load the data. In this tutorial, we will use three CHILDES corpora: Brown (from the USA), Hall (also from the USA), and Thomas (from the UK).
+
+You should have saved the data in your `data` folder which should be in  your the project folder.
+
+
+```{r echi_03_01, message=F, warning=F}
+# brown data (from USA)
+brown <- read.delim(here::here("data", "EngNA_Brown.txt"), sep = "\t", header = T)
+# hall data (from USA)
+hall <- read.delim(here::here("data", "EngNA_Hall.txt"), sep = "\t", header = T)
+# thomas data (from UK)
+thomas <- read.delim(here::here("data", "EngUK_Thomas.txt"), sep = "\t", header = T)
+```
+
+We can now inspect the data and check the frist 6 lines of each table using the `head` function.
+
+Inspect brown data
+
+```{r echi_03_02, message=F, warning=F}
+# inspect
+head(brown)
+```
+
+Inspect hall data
+
+```{r echi_03_03, message=F, warning=F}
+# inspect
+head(hall)
+```
+
+Inspect thomas data.
+
+```{r echi_03_04, message=F, warning=F}
+# inspect
+head(thomas)
+```
+
+## Differences between corpora
+
+If you check the tables shown above, you will see that the table differ a bit. For example, the order of the columns differs and the tables of the data representing North American data only contain utterances by children. Nonetheless, the important information, the age of the child, its utterances and the number of words of each utterance, is present in all tables.
+
+# Case studies
+
+We will now go over some case studies so that you can see how you query the CHILDES data.
+
+## Example 1: Extract uses of the word "No" by children {-}
+
+Here, we want to extract all instances of the word *no* uttered by a child. To filter out utterances that are not produced by the child, we use the `filter` function and we state that we only want utterances produced by a child (`speaker == "CHI"`).  In addition, we only want utterances that contain *no*. Thus, we filter out all utterances that do not contain a *no* (this is done by the `dplyr::filter(stringr::str_detect(utterance, "no"))` part.
+
+
+```{r echi_03_06, message=F, warning=F}
+no <- thomas %>%
+  dplyr::filter(speaker == "CHI") %>%
+  dplyr::filter(stringr::str_detect(utterance, "no"))
+# inspect 
+head(no)
+```
+
+If you want, you then group by *transcript_id* and *age* to see how many *no* occurred in each transcript.  
+
+```{r echi_03_07, message=F, warning=F}
+no_no <- no %>%
+  dplyr::group_by(transcript_id, age_years_targetchild) %>%
+  dplyr::summarise(nos = n())
+head(no_no)
+```
+
+
+If we go back to the original table, you can extract the number of nos and the number of words uttered by children. This allows you to check if the use of *no* shows a relative increase or decrease over time. The `mutate` function creates new columns. The `summary` function summarizes data.
+
+
+```{r echi_03_08, message=F, warning=F}
+no_words <- thomas %>%
+  dplyr::filter(speaker == "CHI") %>%
+  dplyr::group_by(transcript_id, age_years_targetchild) %>%
+  dplyr::mutate(nos = stringr::str_detect(utterance, "no")) %>%
+  dplyr::summarise(nos = sum(nos),
+                   words = sum(as.numeric(words))) %>%
+  # add relative frequency
+  dplyr::mutate(freq = round(nos/words*1000, 3))
+# inspect data
+head(no_words)
+```
+
+We can then visualize the trends using the `ggplot` function . To learn how to visualize data in R see [this tutorial](https://slcladal.github.io/dviz.html).
+
+```{r echi_03_10, message=F, warning=F}
+no_words %>%
+  # convert age to a numeric variable
+  dplyr::mutate(age_years_targetchild = as.numeric(age_years_targetchild)) %>%
+  # start plotting
+  ggplot(aes(x = age_years_targetchild, y = freq)) +
+  geom_smooth() +
+  theme_bw() +
+  labs(x = "Age of target child", y = "Relative frequency of NOs \n (per 1,000 words)")
+```
+
+## Example 2: Extract forms of do {-}
+
+Now we want to extract all forms of do (*do*, *does*, *did*, *done*) uttered by a child in the brown data. In contrast to before, we will use a regular expression to look for all forms of do at the same time. Fo an overview of regular expressions in R, have a look at [this tutorial](https://slcladal.github.io/regex.html). 
+
+There are different regular expression be can use. we could look for `"do|did|does|done"` where the symbol `|` means *or* so that `"do|did|does|done"` means look for *do* or for *did* or for *does* or for *done*.
+
+We will use another expression: `"d[oi][den]{0,1}[es]{0,1}"` which means: look for a *d* followed by an *o* or an *i* then there is an optional *d* or *e* or *n* and then there is another optional *e* or *s*.
+
+```{r echi_03_12, message=F, warning=F}
+do <- brown %>%
+  dplyr::filter(stringr::str_detect(utterance, "d[oi][den]{0,1}[es]{0,1}"))
+  #dplyr::filter(stringr::str_detect(utterance, "do|did|does|done"))
+# inspect 
+head(do)
+```
+
+The table shows that many of the hits are false (all the lines with *dis*) as *dis* stands for *this* and not a form of *do*. 
+
+To filter out the false hits, we again use th `filter`  function and we use it to tell R: *filter out all rows that contain dis*. The important thing here is the `!` symbol right after the opening bracket of the `filter` function. This `!` tells R that it should remove these lines rather than keep them.
+
+
+```{r echi_03_13, message=F, warning=F}
+do <- do %>%
+  dplyr::filter(!stringr::str_detect(utterance, "dis"))
+# inspect 
+head(do)
+```
+
+We can count the instances of teh forms of *do* by running the following chunk of code.
+
+```{r echi_03_14, message=F, warning=F}
+do <- do %>%
+  dplyr::mutate(do = stringr::str_replace_all(utterance, ".*(d[oi][den]{0,1}[es]{0,1}).*", "\\1"))
+# inspect 
+table(do$do)
+```
+
+Oh Nooo! The results are still very messy. Let us filter out rows with words that we are not interested in.
+
+```{r echi_03_15, message=F, warning=F}
+do <- do %>%
+  dplyr::filter(do == "do" | do == "did" | do == "does" | do == "done")
+# inspect 
+table(do$do)
+```
+
+## Example 3: Extracting all questions by mothers {-}
+
+Here, we want to extract all questions uttered by children in the thomas data. We operationalize questions as utterances containing a question mark.
+
+```{r echi_03_16, message=F, warning=F}
+questions <- thomas %>%
+  dplyr::filter(speaker == "CHI") %>%
+  dplyr::filter(stringr::str_detect(utterance, "\\?"))
+# inspect data
+head(questions)
+```
+
+We could now check if the rate of questions changes over time.
+
+
+```{r echi_03_18, message=F, warning=F}
+qchi <- childes %>%
+  dplyr::filter(speaker == "CHI") %>%
+  dplyr::mutate(questions = ifelse(stringr::str_detect(utterance, "\\?") == T, 1,0),
+                utterances = 1) %>%
+  dplyr::group_by(age_years_targetchild) %>%
+  dplyr::summarise(utterances = sum(utterances),
+                questions = sum(questions),
+                percent = round(questions/utterances*100, 2))
+# inspect data
+head(qchi)
+```
+
+```{r echi_03_19, message=F, warning=F}
+qchi %>%
+  dplyr::mutate(age_years_targetchild = as.numeric(age_years_targetchild)) %>%
+  ggplot(aes(x = age_years_targetchild, y = percent)) +
+  geom_bar(stat = "identity") +
+  theme_bw() +
+  labs(x = "Age of target child", y = "Percent \n (questions)")
+```
+
+
+## Example 4: Does the type-token ratio of the output of children change as they mature? {-}
+
+Here we extract all tokens (words with repetition) and types (words without repetition) uttered by children by year and then see if the type-token ratio changes over time.
+
+In a first step, we create a table with the age of the children in years, we then collapse all utterances of the children into one long utterance and then clean this long utterance by removing digits and superfluous white spaces.
+
+```{r echi_03_20, message=F, warning=F}
+utterance_tb <- hall %>%
+  dplyr::group_by(age) %>%
+  dplyr::summarise(allutts = paste0(utterance, collapse = " ")) %>%
+  dplyr::ungroup() %>%
+  dplyr::mutate(age = factor(age),
+                # clean utterance
+                allutts = stringr::str_replace_all(allutts, "\\[.*?\\]", " "),
+                allutts = stringr::str_replace_all(allutts, "\\W", " "),
+                allutts = stringr::str_replace_all(allutts, "\\d", " "),
+                allutts = stringr::str_remove_all(allutts, "xxx"),
+                allutts = stringr::str_remove_all(allutts, "zzz"),
+                allutts = tolower(allutts)) %>%
+  # remove superfluous white spaces
+  dplyr::mutate(allutts = gsub(" {2,}", " ", allutts)) %>%
+  dplyr::mutate(allutts = stringr::str_squish(allutts))
+# inspect data
+head(utterance_tb)
+```
+
+Extract the number of tokens, the number of types and calculating the type-token ratio.
+
+```{r echi_03_21, message=F, warning=F}
+tokens <- stringr::str_count(utterance_tb$allutts, " ") +1
+types <- stringr::str_split(utterance_tb$allutts, " ")
+types <- sapply(types, function(x){
+  x <- length(names(table(x)))
+})
+ttr <- utterance_tb %>%
+  dplyr::mutate(tokens = tokens,
+                types = types) %>%
+  dplyr::select(-allutts) %>%
+  dplyr::mutate(TypeTokenRatio = round(types/tokens, 3))
+# inspect 
+ttr
+```
+
+Plot the type-token ratio against age of the target child.
+
+```{r echi_03_22, message=F, warning=F}
+ttr %>%
+  ggplot(aes(x = age, y = TypeTokenRatio)) +
+  geom_bar(stat = "identity") +
+  coord_cartesian(ylim = c(0, 0.3)) +
+  theme_bw() +
+  labs(x = "Age of target child in months", y = "Type-Token Ratio")
+```
+
+# Saving data to your computer{-}
+
+To save results on your computer, you can use the `write.table` function as shown below.
+
+```{r echi_03_24, message=F, warning=F}
+write.table(ttr, here::here("tables", "ttr_hall.txt"), sep = "\t", row.names = F)
+```
+
+
+***
+
+# Citation & Session Info {-}
+
+Schweinberger, Martin. `r format(Sys.time(), '%Y')`. *Working with the Child Language Data Exchange System (CHILDES) using R*. Tromsø: The Artic University of Norway. url: https://slcladal.github.io/mmws.html (Version `r format(Sys.time(), '%Y.%m.%d')`).
+
+```
+@manual{schweinberger`r format(Sys.time(), '%Y')`mmws,
+  author = {Schweinberger, Martin},
+  title = {Working with the Child Language Data Exchange System (CHILDES) using R},
+  note = {https://slcladal.github.io/mmws.html},
+  year = {2021},
+  organization = "Arctic University of Norway, AcqVA Aurora Center},
+  address = {Tromsø},
+  edition = {`r format(Sys.time(), '%Y.%m.%d')`}
+}
+```
+
+```{r fin}
+sessionInfo()
+```
+
+
+***
+
+[Back to top](#introduction)
+
+***
+
+
+
+

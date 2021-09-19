@@ -1,0 +1,1617 @@
+---
+title: "Working with the Child Language Data Exchange System (CHILDES) using R"
+author: "Martin Schweinberger"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  html_document:
+    theme: cosmo
+    highlight: tango
+bibliography: bibliography.bib
+link-citations: yes
+---
+
+```{r acqva1, echo=F, fig.cap="", message=FALSE, warning=FALSE, out.width='100%'}
+knitr::include_graphics("https://slcladal.github.io/images/acqva.jpg")
+```
+
+# Forrester{-}
+
+## Preparation{-}
+
+Before we do anything else, we prepare our session. In a first step, we will update the latest version of R on our computer. To do this, we install and load the `installr` package and then update to the latest version of R using the `updateR` package fro the `installr` package.
+
+```{r prep0, eval = F, message=F, warning=F}
+# installing and loading the latest installr package:
+install.packages("installr")  # install installr
+library(installr)             # load installr
+installr::updateR()           # updating R
+```
+
+```{r prep1, eval = T, message=F, warning=F}
+# set options
+options(stringsAsFactors = F)          # no automatic data transformation
+options("scipen" = 100, "digits" = 12) # suppress math annotation
+options(max.print=1000)                # show maximally 1000 elements in the output
+# install packages
+#install.packages("tidyverse")
+#install.packages("flextable")
+#install.packages("knitr")
+#install.packages("here"))
+# load packages
+library(tidyverse)
+library(flextable)
+library(knitr)
+library(here)
+# specify path to corpus
+corpuspath <- here::here("data/Eng-UK", "Forrester")
+```
+
+## Data processing
+
+In a first step, we create a list called `cha` with the paths to the individual files in the  corpus. This tells the computer where to find the files it is supposed to load. 
+
+```{r childes_01_03, message=F, warning=F}
+# list corpus files
+cha = list.files(path = corpuspath, 
+                 pattern = ".cha$", 
+                 all.files = T,
+                 full.names = T, 
+                 recursive = T, 
+                 ignore.case = T)
+# use only first 6 files for testing
+#cha <- cha[1:6]
+# check the first 6 file paths
+head(cha)
+```
+
+We now load the data and split it up into files. 
+
+```{r childes_01_04, message=F, warning=F}
+# create version of corpus fit for concordancing
+corpus <- sapply(cha, function(x) {
+  # load data
+  x <- scan(x, what = "char", sep = "\t", quiet = T, quote = "", skipNul = T, encoding = "UTF-8")
+  # clean data
+  x <- iconv(x, from = "UTF-8", to = "ASCII", sub = "")
+  x <- stringr::str_trim(x, side = "both") # remove superfluous white spaces at the edges of strings
+  x <- stringr::str_squish(x)              # remove superfluous white spaces within strings
+  x <- paste0(x, collapse = " ")           # paste all utterances in a file together
+  # split files into indivisual utterances
+  x <- strsplit(gsub("([%|*][a-z|A-Z]{1,4}[0-9]{0,1}:)", "~~~\\1", x), "~~~")
+})
+# inspect results
+str(corpus[1:3])
+```
+
+We have now loaded the files into R, but the format is not yet structured in a why that we can use it - remember: we want the data to be in a tabular format.
+
+
+
+Now, we extract information about the recording, e.g., the participants, the age of the child, the date of the recording etc. 
+
+```{r childes_01_05, message=F, warning=F}
+# extract file info for each file
+fileinfo <- sapply(corpus, function(x){ 
+  # extract first element of each corpus file because this contains the file info
+  x <- x[1]
+  })
+#inspect
+fileinfo[1:3]
+```
+
+Now, we have one element for each file that contains all the relevant information about the file, like when the recording took place, how old the target child was, how was present during the recording etc.
+
+  
+```{r childes_01_06, message=F, warning=F}
+content <- sapply(corpus, function(x){
+  x <- x[2:length(x)]
+  x <- paste0(x, collapse = " ")
+  x <- stringr::str_split(stringr::str_replace_all(x, "(\\*[A-Z])", "~~~\\1"), "~~~")
+})
+# inspect data
+content[[1]][1:6]
+```
+
+The data now consists of utterances but also the pos-tagged utterances and any comments. However, we use this form of the data to extract the clean utterances, the pos-tagged utterances and the comments and store them in different columns. 
+
+Now, we extract how many elements (or utterances) there are in each file by looping over the `content` object and extracting the number of elements within each element of the `content` object by using the `lenght` function. 
+
+```{r childes_01_07, message=F, warning=F}
+elements <- sapply(content, function(x){
+  x <- length(x)
+})
+# inspect
+head(elements)
+```
+
+We now have the file names, the metadata for each file, and the content of each file (that is split into utterances). We use this information to generate a first table which holds the file name in one column, the file information in one column, and the raw file content in another column. 
+
+```{r childes_01_08, message=F, warning=F}
+files <- rep(names(elements), elements)
+fileinfo <- rep(fileinfo, elements)
+rawcontent <- as.vector(unlist(content))
+chitb <- data.frame(1:length(rawcontent),
+                    files,
+                    fileinfo,
+                    rawcontent)
+```
+
+The table in its current form is shown below. We can see that the table has three columns: the first column holds the path to each file, the second contains the file information, and the third the utterances.
+
+```{r childes_01_09, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(chitb, 3)) %>%
+  flextable::autofit()
+```
+
+## Process table{-}
+
+We can now use the information in the two last columns to extract specific pieces of information from the data (which we will store in additional columns that we add to the table). 
+
+```{r childes_01_10, message=F, warning=F}
+childes <- chitb %>%
+  # rename id column
+  dplyr::rename(id = colnames(chitb)[1]) %>%
+  # clean file names
+  dplyr::mutate(files = gsub(".*/(.*?).cha", "\\1", files))
+```
+
+Let's have a look at the data.
+
+```{r childes_01_12, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(childes, 3)) %>%
+  flextable::autofit()
+```
+
+We now continue in the same manner (by remove what is before what interests us and what comes after) and thereby extract pieces of information that we store in new columns.
+
+```{r childes_01_14, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(speaker = stringr::str_remove_all(rawcontent, ":.*"),
+                speaker = stringr::str_remove_all(speaker, "\\W"))
+```  
+
+Creating an utterance column.
+
+```{r childes_01_15, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(utterance = stringr::str_remove_all(rawcontent, "%mor:.*"),
+                utterance = stringr::str_remove_all(utterance, "%gpx:.*"),
+                utterance = stringr::str_remove_all(utterance, "%act:.*"),
+                utterance = stringr::str_remove_all(utterance, "%par:.*"),
+                utterance = stringr::str_remove_all(utterance, "%add:.*"),
+                utterance = stringr::str_remove_all(utterance, "\\*\\w{2,6}:"),
+                utterance = stringr::str_remove_all(utterance, ".{1,1}[0-9]{3,}.*"),
+                utterance = stringr::str_remove_all(utterance, "\\*[A-Z]{1,6}[0-9]{0,2}:"),
+                utterance = stringr::str_squish(utterance))
+```  
+
+Creating a  column with comments. 
+
+```{r childes_01_17, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(comment = stringr::str_remove_all(rawcontent, ".*%gpx:"),
+                comment = stringr::str_remove_all(comment, ".*.{1,1}[0-9]{3,}.*"),
+                comment = stringr::str_squish(comment))
+```  
+
+Creating a  column with the participants that were present during the recording.
+
+```{r childes_01_18, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(participants = gsub(".*@Participants:(.*?)@.*", "\\1", fileinfo))
+```  
+
+Creating a  column with the age of the target child. 
+
+```{r childes_01_19, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(age_targetchild = gsub(".*\\|([0-9]{1,3};[0-9]{1,3}\\.[0-9]{0,3})\\|.*", "\\1", fileinfo)) 
+```  
+
+Creating a  column with the age of the target child in years.
+
+```{r childes_01_20, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(age_years_targetchild = stringr::str_remove_all(age_targetchild, ";.*")) 
+```  
+
+Creating a  column with the sex of the target child.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(sex = gsub(".*\\|([female]{4,6})\\|.*", "\\1", fileinfo))
+```
+
+Creating columns with the location where the recording took place and the situation type of the recording.
+
+```{r childes_01_23, message=F, warning=F}
+childes <- childes %>%  
+  # create situation column
+  dplyr::mutate(situation = gsub(".*@Situation:", "", fileinfo),
+                situation = gsub("@.*", "", situation))
+```  
+
+Creating a column with the number of words in each utterance.
+
+```{r childes_01_25, message=F, warning=F}
+childes <- childes %>%  
+  # create words column
+  dplyr::mutate(words = stringr::str_replace_all(utterance, "\\W", " "),
+                words = stringr::str_squish(words),
+                words = stringr::str_count(words, "\\w+"))
+```  
+
+Add collection and corpus column and change files to tarsncript_id.
+
+```{r}
+childes <- childes %>%  
+  # create words column
+  dplyr::mutate(collection = "EngUK",
+                corpus = "Forrester") %>%
+  dplyr::rename(transcript_id = files)
+```
+
+
+Cleaning the data: removing rows without speakers, rows where the age of the target child was incorrect, and removing superfluous columns.
+
+```{r childes_01_26, message=F, warning=F}
+childes <- childes %>%  
+  # remove rows without speakers (contain only metadata)
+  dplyr::filter(speaker != "") %>%
+  # remove rows with incorrect age of child
+  dplyr::filter(nchar(age_years_targetchild) < 5) %>%
+  # remove utterances without content
+  dplyr::filter(nchar(stringr::str_remove_all(utterance, "[^[:alpha:]]")) != 0) %>%
+  # remove superfluous columns
+  dplyr::select(-fileinfo, -rawcontent, -situation)
+```
+
+```{r childes_01_27, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(childes)) %>%
+  flextable::autofit()
+```
+
+## Saving data to your computer{-}
+
+To save results on your computer, you can use the `write.table` function as shown below.
+
+```{r childes_01_65, message=F, warning=F}
+write.table(childes, here::here("data", "EngUK_Forrester.txt"), sep = "\t", row.names = F)
+```
+
+# Lara{-}
+
+## Preparation{-}
+
+Before we do anything else, we prepare our session. In a first step, we will update the latest version of R on our computer. To do this, we install and load the `installr` package and then update to the latest version of R using the `updateR` package fro the `installr` package.
+
+```{r prep0, eval = T, message=F, warning=F}
+# specify path to corpus
+corpuspath <- here::here("data/Eng-UK", "Lara")
+```
+
+## Data processing
+
+In a first step, we create a list called `cha` with the paths to the individual files in the  corpus. This tells the computer where to find the files it is supposed to load. 
+
+```{r childes_01_03, message=F, warning=F}
+# list corpus files
+cha = list.files(path = corpuspath, 
+                 pattern = ".cha$", 
+                 all.files = T,
+                 full.names = T, 
+                 recursive = T, 
+                 ignore.case = T)
+# use only first 6 files for testing
+#cha <- cha[1:6]
+# check the first 6 file paths
+head(cha)
+```
+
+We now load the data and split it up into files. 
+
+```{r childes_01_04, message=F, warning=F}
+# create version of corpus fit for concordancing
+corpus <- sapply(cha, function(x) {
+  # load data
+  x <- scan(x, what = "char", sep = "\t", quiet = T, quote = "", skipNul = T, encoding = "UTF-8")
+  # clean data
+  x <- iconv(x, from = "UTF-8", to = "ASCII", sub = "")
+  x <- stringr::str_trim(x, side = "both") # remove superfluous white spaces at the edges of strings
+  x <- stringr::str_squish(x)              # remove superfluous white spaces within strings
+  x <- paste0(x, collapse = " ")           # paste all utterances in a file together
+  # split files into individual utterances
+  x <- strsplit(gsub("([%|*][a-z|A-Z]{1,4}[0-9]{0,1}:)", "~~~\\1", x), "~~~")
+})
+# inspect results
+str(corpus[1:3])
+```
+
+We have now loaded the files into R, but the format is not yet structured in a why that we can use it - remember: we want the data to be in a tabular format.
+
+
+
+Now, we extract information about the recording, e.g., the participants, the age of the child, the date of the recording etc. 
+
+```{r childes_01_05, message=F, warning=F}
+# extract file info for each file
+fileinfo <- sapply(corpus, function(x){ 
+  # extract first element of each corpus file because this contains the file info
+  x <- x[1]
+  })
+#inspect
+fileinfo[1:3]
+```
+
+Now, we have one element for each file that contains all the relevant information about the file, like when the recording took place, how old the target child was, how was present during the recording etc.
+
+  
+```{r childes_01_06, message=F, warning=F}
+content <- sapply(corpus, function(x){
+  x <- x[2:length(x)]
+  x <- paste0(x, collapse = " ")
+  x <- stringr::str_split(stringr::str_replace_all(x, "(\\*[A-Z])", "~~~\\1"), "~~~")
+})
+# inspect data
+content[[1]][1:6]
+```
+
+The data now consists of utterances but also the pos-tagged utterances and any comments. However, we use this form of the data to extract the clean utterances, the pos-tagged utterances and the comments and store them in different columns. 
+
+Now, we extract how many elements (or utterances) there are in each file by looping over the `content` object and extracting the number of elements within each element of the `content` object by using the `lenght` function. 
+
+```{r childes_01_07, message=F, warning=F}
+elements <- sapply(content, function(x){
+  x <- length(x)
+})
+# inspect
+head(elements)
+```
+
+We now have the file names, the metadata for each file, and the content of each file (that is split into utterances). We use this information to generate a first table which holds the file name in one column, the file information in one column, and the raw file content in another column. 
+
+```{r childes_01_08, message=F, warning=F}
+files <- rep(names(elements), elements)
+fileinfo <- rep(fileinfo, elements)
+rawcontent <- as.vector(unlist(content))
+chitb <- data.frame(1:length(rawcontent),
+                    files,
+                    fileinfo,
+                    rawcontent)
+```
+
+The table in its current form is shown below. We can see that the table has three columns: the first column holds the path to each file, the second contains the file information, and the third the utterances.
+
+```{r childes_01_09, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(chitb, 3)) %>%
+  flextable::autofit()
+```
+
+## Process table{-}
+
+We can now use the information in the two last columns to extract specific pieces of information from the data (which we will store in additional columns that we add to the table). 
+
+```{r childes_01_10, message=F, warning=F}
+childes <- chitb %>%
+  # rename id column
+  dplyr::rename(id = colnames(chitb)[1]) %>%
+  # clean file names
+  dplyr::mutate(files = gsub(".*/(.*?).cha", "\\1", files))
+```
+
+Let's have a look at the data.
+
+```{r childes_01_12, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(childes, 3)) %>%
+  flextable::autofit()
+```
+
+We now continue in the same manner (by remove what is before what interests us and what comes after) and thereby extract pieces of information that we store in new columns.
+
+```{r childes_01_14, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(speaker = stringr::str_remove_all(rawcontent, ":.*"),
+                speaker = stringr::str_remove_all(speaker, "\\W"))
+```  
+
+Creating an utterance column.
+
+```{r childes_01_15, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(utterance = stringr::str_remove_all(rawcontent, "%mor:.*"),
+                utterance = stringr::str_remove_all(utterance, "%gpx:.*"),
+                utterance = stringr::str_remove_all(utterance, "%act:.*"),
+                utterance = stringr::str_remove_all(utterance, "%par:.*"),
+                utterance = stringr::str_remove_all(utterance, "%add:.*"),
+                utterance = stringr::str_remove_all(utterance, "\\*\\w{2,6}:"),
+                utterance = stringr::str_remove_all(utterance, ".{1,1}[0-9]{3,}.*"),
+                utterance = stringr::str_remove_all(utterance, "\\*[A-Z]{1,6}[0-9]{0,2}:"),
+                utterance = stringr::str_remove_all(utterance, "@.*"),
+                utterance = stringr::str_remove_all(utterance, "\\[.*?\\]"),
+                utterance = stringr::str_squish(utterance))
+```  
+
+Creating a  column with comments. 
+
+```{r childes_01_17, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(comment = stringr::str_remove_all(rawcontent, ".*%gpx:"),
+                comment = stringr::str_remove_all(comment, ".*.{1,1}[0-9]{3,}.*"),
+                comment = stringr::str_squish(comment))
+```  
+
+Creating a  column with the participants that were present during the recording.
+
+```{r childes_01_18, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(participants = gsub(".*@Participants:(.*?)@.*", "\\1", fileinfo))
+```  
+
+Creating a  column with the age of the target child. 
+
+```{r childes_01_19, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(age_targetchild = gsub(".*\\|([0-9]{1,3};[0-9]{1,3}\\.[0-9]{0,3})\\|.*", "\\1", fileinfo)) 
+```  
+
+Creating a  column with the age of the target child in years.
+
+```{r childes_01_20, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(age_years_targetchild = stringr::str_remove_all(age_targetchild, ";.*")) 
+```  
+
+Creating a  column with the location.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(location = gsub(".*@Location:", "", fileinfo),
+                location = gsub("@.*", "", location))
+```
+
+Creating columns with the location where the recording took place and the situation type of the recording.
+
+```{r childes_01_23, message=F, warning=F}
+childes <- childes %>%  
+  # create situation column
+  dplyr::mutate(situation = gsub(".*@Situation:", "", fileinfo),
+                situation = gsub("@.*", "", situation))
+```  
+
+Creating a  column with the date.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(date = gsub(".*@Date:", "", fileinfo),
+                date = gsub("@.*", "", date))
+```
+
+Creating a column with the number of words in each utterance.
+
+```{r childes_01_25, message=F, warning=F}
+childes <- childes %>%  
+  # create words column
+  dplyr::mutate(words = stringr::str_replace_all(utterance, "\\W", " "),
+                words = stringr::str_squish(words),
+                words = stringr::str_count(words, "\\w+"))
+```  
+
+Add collection and corpus column and change files to tarsncript_id.
+
+```{r}
+childes <- childes %>%  
+  # create words column
+  dplyr::mutate(collection = "EngUK",
+                corpus = "Lara") %>%
+  dplyr::rename(transcript_id = files)
+```
+
+Cleaning the data: removing rows without speakers, rows where the age of the target child was incorrect, and removing superfluous columns.
+
+```{r childes_01_26, message=F, warning=F}
+childes <- childes %>%  
+  # remove rows without speakers (contain only metadata)
+  dplyr::filter(speaker != "") %>%
+  # remove rows with incorrect age of child
+  dplyr::filter(nchar(age_years_targetchild) < 5) %>%
+  # remove utterances without content
+  dplyr::filter(nchar(stringr::str_remove_all(utterance, "[^[:alpha:]]")) != 0) %>%
+  # remove superfluous columns
+  dplyr::select(-fileinfo, -rawcontent, -situation)
+```
+
+```{r childes_01_27, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(childes)) %>%
+  flextable::autofit()
+```
+
+## Saving data to your computer{-}
+
+To save results on your computer, you can use the `write.table` function as shown below.
+
+```{r childes_01_65, message=F, warning=F}
+write.table(childes, here::here("data", "EngUK_Lara.txt"), sep = "\t", row.names = F)
+```
+
+# Lara-Diary{-}
+
+## Preparation{-}
+
+Before we do anything else, we prepare our session. In a first step, we will update the latest version of R on our computer. To do this, we install and load the `installr` package and then update to the latest version of R using the `updateR` package fro the `installr` package.
+
+```{r prep0, eval = T, message=F, warning=F}
+# specify path to corpus
+corpuspath <- here::here("data/Eng-UK", "Lara-Diary")
+```
+
+## Data processing
+
+In a first step, we create a list called `cha` with the paths to the individual files in the  corpus. This tells the computer where to find the files it is supposed to load. 
+
+```{r childes_01_03, message=F, warning=F}
+# list corpus files
+cha = list.files(path = corpuspath, 
+                 pattern = ".cha$", 
+                 all.files = T,
+                 full.names = T, 
+                 recursive = T, 
+                 ignore.case = T)
+# use only first 6 files for testing
+#cha <- cha[1:6]
+# check the first 6 file paths
+head(cha)
+```
+
+We now load the data and split it up into files. 
+
+```{r childes_01_04, message=F, warning=F}
+# create version of corpus fit for concordancing
+corpus <- sapply(cha, function(x) {
+  # load data
+  x <- scan(x, what = "char", sep = "\t", quiet = T, quote = "", skipNul = T, encoding = "UTF-8")
+  # clean data
+  x <- iconv(x, from = "UTF-8", to = "ASCII", sub = "")
+  x <- stringr::str_trim(x, side = "both") # remove superfluous white spaces at the edges of strings
+  x <- stringr::str_squish(x)              # remove superfluous white spaces within strings
+  x <- paste0(x, collapse = " ")           # paste all utterances in a file together
+  # split files into individual utterances
+  x <- strsplit(gsub("([%|*][a-z|A-Z]{1,4}[0-9]{0,1}:)", "~~~\\1", x), "~~~")
+})
+# inspect results
+str(corpus[1:3])
+```
+
+We have now loaded the files into R, but the format is not yet structured in a why that we can use it - remember: we want the data to be in a tabular format.
+
+
+
+Now, we extract information about the recording, e.g., the participants, the age of the child, the date of the recording etc. 
+
+```{r childes_01_05, message=F, warning=F}
+# extract file info for each file
+fileinfo <- sapply(corpus, function(x){ 
+  # extract first element of each corpus file because this contains the file info
+  x <- x[1]
+  })
+#inspect
+fileinfo[1:3]
+```
+
+Now, we have one element for each file that contains all the relevant information about the file, like when the recording took place, how old the target child was, how was present during the recording etc.
+
+  
+```{r childes_01_06, message=F, warning=F}
+content <- sapply(corpus, function(x){
+  x <- x[2:length(x)]
+  x <- paste0(x, collapse = " ")
+  x <- stringr::str_split(stringr::str_replace_all(x, "(\\*[A-Z])", "~~~\\1"), "~~~")
+})
+# inspect data
+content[[1]][1:6]
+```
+
+The data now consists of utterances but also the pos-tagged utterances and any comments. However, we use this form of the data to extract the clean utterances, the pos-tagged utterances and the comments and store them in different columns. 
+
+Now, we extract how many elements (or utterances) there are in each file by looping over the `content` object and extracting the number of elements within each element of the `content` object by using the `lenght` function. 
+
+```{r childes_01_07, message=F, warning=F}
+elements <- sapply(content, function(x){
+  x <- length(x)
+})
+# inspect
+head(elements)
+```
+
+We now have the file names, the metadata for each file, and the content of each file (that is split into utterances). We use this information to generate a first table which holds the file name in one column, the file information in one column, and the raw file content in another column. 
+
+```{r childes_01_08, message=F, warning=F}
+files <- rep(names(elements), elements)
+fileinfo <- rep(fileinfo, elements)
+rawcontent <- as.vector(unlist(content))
+chitb <- data.frame(1:length(rawcontent),
+                    files,
+                    fileinfo,
+                    rawcontent)
+```
+
+The table in its current form is shown below. We can see that the table has three columns: the first column holds the path to each file, the second contains the file information, and the third the utterances.
+
+```{r childes_01_09, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(chitb, 3)) %>%
+  flextable::autofit()
+```
+
+## Process table{-}
+
+We can now use the information in the two last columns to extract specific pieces of information from the data (which we will store in additional columns that we add to the table). 
+
+```{r childes_01_10, message=F, warning=F}
+childes <- chitb %>%
+  # rename id column
+  dplyr::rename(id = colnames(chitb)[1]) %>%
+  # clean file names
+  dplyr::mutate(files = gsub(".*/(.*?).cha", "\\1", files))
+```
+
+Let's have a look at the data.
+
+```{r childes_01_12, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(childes, 3)) %>%
+  flextable::autofit()
+```
+
+We now continue in the same manner (by remove what is before what interests us and what comes after) and thereby extract pieces of information that we store in new columns.
+
+```{r childes_01_14, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(speaker = stringr::str_remove_all(rawcontent, ":.*"),
+                speaker = stringr::str_remove_all(speaker, "\\W"))
+```  
+
+Creating an utterance column.
+
+```{r childes_01_15, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(utterance = stringr::str_remove_all(rawcontent, "%mor:.*"),
+                utterance = stringr::str_remove_all(utterance, "%gpx:.*"),
+                utterance = stringr::str_remove_all(utterance, "%act:.*"),
+                utterance = stringr::str_remove_all(utterance, "%par:.*"),
+                utterance = stringr::str_remove_all(utterance, "%add:.*"),
+                utterance = stringr::str_remove_all(utterance, "\\*\\w{2,6}:"),
+                utterance = stringr::str_remove_all(utterance, ".{1,1}[0-9]{3,}.*"),
+                utterance = stringr::str_remove_all(utterance, "\\*[A-Z]{1,6}[0-9]{0,2}:"),
+                utterance = stringr::str_remove_all(utterance, "@.*"),
+                utterance = stringr::str_remove_all(utterance, "\\[.*?\\]"),
+                utterance = stringr::str_squish(utterance))
+```  
+
+Creating a  column with comments. 
+
+```{r childes_01_17, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(comment = stringr::str_remove_all(rawcontent, ".*%gpx:"),
+                comment = stringr::str_remove_all(comment, ".*.{1,1}[0-9]{3,}.*"),
+                comment = stringr::str_squish(comment))
+```  
+
+Creating a  column with the participants that were present during the recording.
+
+```{r childes_01_18, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(participants = gsub(".*@Participants:(.*?)@.*", "\\1", fileinfo))
+```  
+
+Creating a  column with the age of the target child. 
+
+```{r childes_01_19, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(age_targetchild = gsub(".*\\|([0-9]{1,3};[0-9]{1,3}\\.[0-9]{0,3})\\|.*", "\\1", fileinfo)) 
+```  
+
+Creating a  column with the age of the target child in years.
+
+```{r childes_01_20, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(age_years_targetchild = stringr::str_remove_all(age_targetchild, ";.*")) 
+```  
+
+Creating a  column with the location.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(location = gsub(".*@Location:", "", fileinfo),
+                location = gsub("@.*", "", location))
+```
+
+Creating columns with the location where the recording took place and the situation type of the recording.
+
+```{r childes_01_23, message=F, warning=F}
+childes <- childes %>%  
+  # create situation column
+  dplyr::mutate(situation = gsub(".*@Situation:", "", fileinfo),
+                situation = gsub("@.*", "", situation))
+```  
+
+Creating a  column with the date.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(date = gsub(".*@Date:", "", fileinfo),
+                date = gsub("@.*", "", date))
+```
+
+Creating a column with the number of words in each utterance.
+
+```{r childes_01_25, message=F, warning=F}
+childes <- childes %>%  
+  # create words column
+  dplyr::mutate(words = stringr::str_replace_all(utterance, "\\W", " "),
+                words = stringr::str_squish(words),
+                words = stringr::str_count(words, "\\w+"))
+```  
+
+Add collection and corpus column and change files to tarsncript_id.
+
+```{r}
+childes <- childes %>%  
+  # create words column
+  dplyr::mutate(collection = "EngUK",
+                corpus = "Lara_Diary") %>%
+  dplyr::rename(transcript_id = files)
+```
+
+Cleaning the data: removing rows without speakers, rows where the age of the target child was incorrect, and removing superfluous columns.
+
+```{r childes_01_26, message=F, warning=F}
+childes <- childes %>%  
+  # remove rows without speakers (contain only metadata)
+  dplyr::filter(speaker != "") %>%
+  # remove rows with incorrect age of child
+  dplyr::filter(nchar(age_years_targetchild) < 5) %>%
+  # remove utterances without content
+  dplyr::filter(nchar(stringr::str_remove_all(utterance, "[^[:alpha:]]")) != 0) %>%
+  # remove superfluous columns
+  dplyr::select(-fileinfo, -rawcontent, -situation)
+```
+
+```{r childes_01_27, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(childes)) %>%
+  flextable::autofit()
+```
+
+## Saving data to your computer{-}
+
+To save results on your computer, you can use the `write.table` function as shown below.
+
+```{r childes_01_65, message=F, warning=F}
+write.table(childes, here::here("data", "EngUK_Lara-Diary.txt"), sep = "\t", row.names = F)
+```
+
+# Smith{-}
+
+## Preparation{-}
+
+Before we do anything else, we prepare our session. In a first step, we will update the latest version of R on our computer. To do this, we install and load the `installr` package and then update to the latest version of R using the `updateR` package fro the `installr` package.
+
+```{r prep0, eval = T, message=F, warning=F}
+# specify path to corpus
+corpuspath <- here::here("data/Eng-UK", "Smith")
+```
+
+## Data processing
+
+In a first step, we create a list called `cha` with the paths to the individual files in the  corpus. This tells the computer where to find the files it is supposed to load. 
+
+```{r childes_01_03, message=F, warning=F}
+# list corpus files
+cha = list.files(path = corpuspath, 
+                 pattern = ".cha$", 
+                 all.files = T,
+                 full.names = T, 
+                 recursive = T, 
+                 ignore.case = T)
+# use only first 6 files for testing
+#cha <- cha[1:6]
+# check the first 6 file paths
+head(cha)
+```
+
+We now load the data and split it up into files. 
+
+```{r childes_01_04, message=F, warning=F}
+# create version of corpus fit for concordancing
+corpus <- sapply(cha, function(x) {
+  # load data
+  x <- scan(x, what = "char", sep = "\t", quiet = T, quote = "", skipNul = T, encoding = "UTF-8")
+  # clean data
+  x <- iconv(x, from = "UTF-8", to = "ASCII", sub = "")
+  x <- stringr::str_trim(x, side = "both") # remove superfluous white spaces at the edges of strings
+  x <- stringr::str_squish(x)              # remove superfluous white spaces within strings
+  x <- paste0(x, collapse = " ")           # paste all utterances in a file together
+  # split files into individual utterances
+  x <- strsplit(gsub("([%|*][a-z|A-Z]{1,4}[0-9]{0,1}:)", "~~~\\1", x), "~~~")
+})
+# inspect results
+str(corpus[1:3])
+```
+
+We have now loaded the files into R, but the format is not yet structured in a why that we can use it - remember: we want the data to be in a tabular format.
+
+
+
+Now, we extract information about the recording, e.g., the participants, the age of the child, the date of the recording etc. 
+
+```{r childes_01_05, message=F, warning=F}
+# extract file info for each file
+fileinfo <- sapply(corpus, function(x){ 
+  # extract first element of each corpus file because this contains the file info
+  x <- x[1]
+  })
+#inspect
+fileinfo[1:3]
+```
+
+Now, we have one element for each file that contains all the relevant information about the file, like when the recording took place, how old the target child was, how was present during the recording etc.
+
+  
+```{r childes_01_06, message=F, warning=F}
+content <- sapply(corpus, function(x){
+  x <- x[2:length(x)]
+  x <- paste0(x, collapse = " ")
+  x <- stringr::str_split(stringr::str_replace_all(x, "(\\*[A-Z])", "~~~\\1"), "~~~")
+})
+# inspect data
+content[[1]][1:6]
+```
+
+The data now consists of utterances but also the pos-tagged utterances and any comments. However, we use this form of the data to extract the clean utterances, the pos-tagged utterances and the comments and store them in different columns. 
+
+Now, we extract how many elements (or utterances) there are in each file by looping over the `content` object and extracting the number of elements within each element of the `content` object by using the `lenght` function. 
+
+```{r childes_01_07, message=F, warning=F}
+elements <- sapply(content, function(x){
+  x <- length(x)
+})
+# inspect
+head(elements)
+```
+
+We now have the file names, the metadata for each file, and the content of each file (that is split into utterances). We use this information to generate a first table which holds the file name in one column, the file information in one column, and the raw file content in another column. 
+
+```{r childes_01_08, message=F, warning=F}
+files <- rep(names(elements), elements)
+fileinfo <- rep(fileinfo, elements)
+rawcontent <- as.vector(unlist(content))
+chitb <- data.frame(1:length(rawcontent),
+                    files,
+                    fileinfo,
+                    rawcontent)
+```
+
+The table in its current form is shown below. We can see that the table has three columns: the first column holds the path to each file, the second contains the file information, and the third the utterances.
+
+```{r childes_01_09, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(chitb, 3)) %>%
+  flextable::autofit()
+```
+
+## Process table{-}
+
+We can now use the information in the two last columns to extract specific pieces of information from the data (which we will store in additional columns that we add to the table). 
+
+```{r childes_01_10, message=F, warning=F}
+childes <- chitb %>%
+  # rename id column
+  dplyr::rename(id = colnames(chitb)[1]) %>%
+  # clean file names
+  dplyr::mutate(files = gsub(".*/(.*?).cha", "\\1", files))
+```
+
+Let's have a look at the data.
+
+```{r childes_01_12, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(childes, 3)) %>%
+  flextable::autofit()
+```
+
+We now continue in the same manner (by remove what is before what interests us and what comes after) and thereby extract pieces of information that we store in new columns.
+
+```{r childes_01_14, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(speaker = stringr::str_remove_all(rawcontent, ":.*"),
+                speaker = stringr::str_remove_all(speaker, "\\W"))
+```  
+
+Creating an utterance column.
+
+```{r childes_01_15, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(utterance = stringr::str_remove_all(rawcontent, "%mor:.*"),
+                utterance = stringr::str_remove_all(utterance, "%gpx:.*"),
+                utterance = stringr::str_remove_all(utterance, "%act:.*"),
+                utterance = stringr::str_remove_all(utterance, "%par:.*"),
+                utterance = stringr::str_remove_all(utterance, "%add:.*"),
+                utterance = stringr::str_remove_all(utterance, "%pho:.*"),
+                utterance = stringr::str_remove_all(utterance, "\\*\\w{2,6}:"),
+                utterance = stringr::str_remove_all(utterance, ".{1,1}[0-9]{3,}.*"),
+                utterance = stringr::str_remove_all(utterance, "\\*[A-Z]{1,6}[0-9]{0,2}:"),
+                utterance = stringr::str_remove_all(utterance, "@.*"),
+                utterance = stringr::str_remove_all(utterance, "\\[.*?\\]"),
+                utterance = stringr::str_squish(utterance))
+```  
+
+Creating a  column with the sex of the target child.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(sex = gsub(".*\\|([female]{4,6})\\|.*", "\\1", fileinfo))
+```
+
+Creating a  column with comments. 
+
+```{r childes_01_17, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(comment = stringr::str_remove_all(rawcontent, ".*%gpx:"),
+                comment = stringr::str_remove_all(comment, ".*.{1,1}[0-9]{3,}.*"),
+                comment = stringr::str_squish(comment))
+```  
+
+Creating a  column with the participants that were present during the recording.
+
+```{r childes_01_18, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(participants = gsub(".*@Participants:(.*?)@.*", "\\1", fileinfo))
+```  
+
+Creating a  column with the age of the target child. 
+
+```{r childes_01_19, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(age_targetchild = gsub(".*\\|([0-9]{1,3};[0-9]{1,3}\\.[0-9]{0,3})\\|.*", "\\1", fileinfo)) 
+```  
+
+Creating a  column with the age of the target child in years.
+
+```{r childes_01_20, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(age_years_targetchild = stringr::str_remove_all(age_targetchild, ";.*")) 
+```  
+
+Creating a  column with the location.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(location = gsub(".*@Location:", "", fileinfo),
+                location = gsub("@.*", "", location))
+```
+
+Creating columns with the location where the recording took place and the situation type of the recording.
+
+```{r childes_01_23, message=F, warning=F}
+childes <- childes %>%  
+  # create situation column
+  dplyr::mutate(situation = gsub(".*@Situation:", "", fileinfo),
+                situation = gsub("@.*", "", situation))
+```  
+
+Creating a  column with the date.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(date = gsub(".*@Date:", "", fileinfo),
+                date = gsub("@.*", "", date))
+```
+
+Creating a column with the number of words in each utterance.
+
+```{r childes_01_25, message=F, warning=F}
+childes <- childes %>%  
+  # create words column
+  dplyr::mutate(words = stringr::str_replace_all(utterance, "\\W", " "),
+                words = stringr::str_squish(words),
+                words = stringr::str_count(words, "\\w+"))
+```  
+
+Add collection and corpus column and change files to tarsncript_id.
+
+```{r}
+childes <- childes %>%  
+  # create words column
+  dplyr::mutate(collection = "EngUK",
+                corpus = "Smith") %>%
+  dplyr::rename(transcript_id = files)
+```
+
+Cleaning the data: removing rows without speakers, rows where the age of the target child was incorrect, and removing superfluous columns.
+
+```{r childes_01_26, message=F, warning=F}
+childes <- childes %>%  
+  # remove rows without speakers (contain only metadata)
+  dplyr::filter(speaker != "") %>%
+  # remove rows with incorrect age of child
+  dplyr::filter(nchar(age_years_targetchild) < 5) %>%
+  # remove utterances without content
+  dplyr::filter(nchar(stringr::str_remove_all(utterance, "[^[:alpha:]]")) != 0) %>%
+  # remove superfluous columns
+  dplyr::select(-fileinfo, -rawcontent, -situation)
+```
+
+```{r childes_01_27, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(childes)) %>%
+  flextable::autofit()
+```
+
+## Saving data to your computer{-}
+
+To save results on your computer, you can use the `write.table` function as shown below.
+
+```{r childes_01_65, message=F, warning=F}
+write.table(childes, here::here("data", "EngUK_Smith.txt"), sep = "\t", row.names = F)
+```
+
+# Thomas{-}
+
+## Preparation{-}
+
+Before we do anything else, we prepare our session. In a first step, we will update the latest version of R on our computer. To do this, we install and load the `installr` package and then update to the latest version of R using the `updateR` package fro the `installr` package.
+
+```{r prep0, eval = T, message=F, warning=F}
+# specify path to corpus
+corpuspath <- here::here("data/Eng-UK", "Thomas")
+```
+
+## Data processing
+
+In a first step, we create a list called `cha` with the paths to the individual files in the  corpus. This tells the computer where to find the files it is supposed to load. 
+
+```{r childes_01_03, message=F, warning=F}
+# list corpus files
+cha = list.files(path = corpuspath, 
+                 pattern = ".cha$", 
+                 all.files = T,
+                 full.names = T, 
+                 recursive = T, 
+                 ignore.case = T)
+# use only first 6 files for testing
+#cha <- cha[1:6]
+# check the first 6 file paths
+head(cha)
+```
+
+We now load the data and split it up into files. 
+
+```{r childes_01_04, message=F, warning=F}
+# create version of corpus fit for concordancing
+corpus <- sapply(cha, function(x) {
+  # load data
+  x <- scan(x, what = "char", sep = "\t", quiet = T, quote = "", skipNul = T, encoding = "UTF-8")
+  # clean data
+  x <- iconv(x, from = "UTF-8", to = "ASCII", sub = "")
+  x <- stringr::str_trim(x, side = "both") # remove superfluous white spaces at the edges of strings
+  x <- stringr::str_squish(x)              # remove superfluous white spaces within strings
+  x <- paste0(x, collapse = " ")           # paste all utterances in a file together
+  # split files into individual utterances
+  x <- strsplit(gsub("([%|*][a-z|A-Z]{1,4}[0-9]{0,1}:)", "~~~\\1", x), "~~~")
+})
+# inspect results
+str(corpus[1:3])
+```
+
+We have now loaded the files into R, but the format is not yet structured in a why that we can use it - remember: we want the data to be in a tabular format.
+
+
+
+Now, we extract information about the recording, e.g., the participants, the age of the child, the date of the recording etc. 
+
+```{r childes_01_05, message=F, warning=F}
+# extract file info for each file
+fileinfo <- sapply(corpus, function(x){ 
+  # extract first element of each corpus file because this contains the file info
+  x <- x[1]
+  })
+#inspect
+fileinfo[1:3]
+```
+
+Now, we have one element for each file that contains all the relevant information about the file, like when the recording took place, how old the target child was, how was present during the recording etc.
+
+  
+```{r childes_01_06, message=F, warning=F}
+content <- sapply(corpus, function(x){
+  x <- x[2:length(x)]
+  x <- paste0(x, collapse = " ")
+  x <- stringr::str_split(stringr::str_replace_all(x, "(\\*[A-Z])", "~~~\\1"), "~~~")
+})
+# inspect data
+content[[1]][1:6]
+```
+
+The data now consists of utterances but also the pos-tagged utterances and any comments. However, we use this form of the data to extract the clean utterances, the pos-tagged utterances and the comments and store them in different columns. 
+
+Now, we extract how many elements (or utterances) there are in each file by looping over the `content` object and extracting the number of elements within each element of the `content` object by using the `lenght` function. 
+
+```{r childes_01_07, message=F, warning=F}
+elements <- sapply(content, function(x){
+  x <- length(x)
+})
+# inspect
+head(elements)
+```
+
+We now have the file names, the metadata for each file, and the content of each file (that is split into utterances). We use this information to generate a first table which holds the file name in one column, the file information in one column, and the raw file content in another column. 
+
+```{r childes_01_08, message=F, warning=F}
+files <- rep(names(elements), elements)
+fileinfo <- rep(fileinfo, elements)
+rawcontent <- as.vector(unlist(content))
+chitb <- data.frame(1:length(rawcontent),
+                    files,
+                    fileinfo,
+                    rawcontent)
+```
+
+The table in its current form is shown below. We can see that the table has three columns: the first column holds the path to each file, the second contains the file information, and the third the utterances.
+
+```{r childes_01_09, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(chitb, 3)) %>%
+  flextable::autofit()
+```
+
+## Process table{-}
+
+We can now use the information in the two last columns to extract specific pieces of information from the data (which we will store in additional columns that we add to the table). 
+
+```{r childes_01_10, message=F, warning=F}
+childes <- chitb %>%
+  # rename id column
+  dplyr::rename(id = colnames(chitb)[1]) %>%
+  # clean file names
+  dplyr::mutate(files = gsub(".*/(.*?).cha", "\\1", files))
+```
+
+Let's have a look at the data.
+
+```{r childes_01_12, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(childes, 3)) %>%
+  flextable::autofit()
+```
+
+We now continue in the same manner (by remove what is before what interests us and what comes after) and thereby extract pieces of information that we store in new columns.
+
+```{r childes_01_14, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(speaker = stringr::str_remove_all(rawcontent, ":.*"),
+                speaker = stringr::str_remove_all(speaker, "\\W"))
+```  
+
+Creating an utterance column.
+
+```{r childes_01_15, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(utterance = stringr::str_remove_all(rawcontent, "%mor:.*"),
+                utterance = stringr::str_remove_all(utterance, "%gpx:.*"),
+                utterance = stringr::str_remove_all(utterance, "%act:.*"),
+                utterance = stringr::str_remove_all(utterance, "%par:.*"),
+                utterance = stringr::str_remove_all(utterance, "%add:.*"),
+                utterance = stringr::str_remove_all(utterance, "%pho:.*"),
+                utterance = stringr::str_remove_all(utterance, "\\*\\w{2,6}:"),
+                utterance = stringr::str_remove_all(utterance, ".{1,1}[0-9]{3,}.*"),
+                utterance = stringr::str_remove_all(utterance, "\\*[A-Z]{1,6}[0-9]{0,2}:"),
+                utterance = stringr::str_remove_all(utterance, "@.*"),
+                utterance = stringr::str_remove_all(utterance, "\\[.*?\\]"),
+                utterance = stringr::str_remove_all(utterance, "\\+|\\&"),
+                utterance = stringr::str_squish(utterance))
+```  
+
+Creating a  column with the sex of the target child.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(sex = gsub(".*\\|([female]{4,6})\\|.*", "\\1", fileinfo))
+```
+
+Creating a  column with comments. 
+
+```{r childes_01_17, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(comment = stringr::str_remove_all(rawcontent, ".*%gpx:"),
+                comment = stringr::str_remove_all(comment, ".*.{1,1}[0-9]{3,}.*"),
+                comment = stringr::str_squish(comment))
+```  
+
+Creating a  column with the participants that were present during the recording.
+
+```{r childes_01_18, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(participants = gsub(".*@Participants:(.*?)@.*", "\\1", fileinfo))
+```  
+
+Creating a  column with the age of the target child. 
+
+```{r childes_01_19, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(age_targetchild = gsub(".*\\|([0-9]{1,3};[0-9]{1,3}\\.[0-9]{0,3})\\|.*", "\\1", fileinfo)) 
+```  
+
+Creating a  column with the age of the target child in years.
+
+```{r childes_01_20, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(age_years_targetchild = stringr::str_remove_all(age_targetchild, ";.*")) 
+```  
+
+Creating a  column with the location.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(location = gsub(".*@Location:", "", fileinfo),
+                location = gsub("@.*", "", location))
+```
+
+Creating columns with the location where the recording took place and the situation type of the recording.
+
+```{r childes_01_23, message=F, warning=F}
+childes <- childes %>%  
+  # create situation column
+  dplyr::mutate(situation = gsub(".*@Situation:", "", fileinfo),
+                situation = gsub("@.*", "", situation))
+```  
+
+Creating a  column with the date.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(date = gsub(".*@Date:", "", fileinfo),
+                date = gsub("@.*", "", date))
+```
+
+Creating a column with the number of words in each utterance.
+
+```{r childes_01_25, message=F, warning=F}
+childes <- childes %>%  
+  # create words column
+  dplyr::mutate(words = stringr::str_replace_all(utterance, "\\W", " "),
+                words = stringr::str_squish(words),
+                words = stringr::str_count(words, "\\w+"))
+```  
+
+Add collection and corpus column and change files to tarsncript_id.
+
+```{r}
+childes <- childes %>%  
+  # create words column
+  dplyr::mutate(collection = "EngUK",
+                corpus = "Thomas") %>%
+  dplyr::rename(transcript_id = files)
+```
+
+Cleaning the data: removing rows without speakers, rows where the age of the target child was incorrect, and removing superfluous columns.
+
+```{r childes_01_26, message=F, warning=F}
+childes <- childes %>%  
+  # remove rows without speakers (contain only metadata)
+  dplyr::filter(speaker != "") %>%
+  # remove rows with incorrect age of child
+  dplyr::filter(nchar(age_years_targetchild) < 5) %>%
+  # remove utterances without content
+  dplyr::filter(nchar(stringr::str_remove_all(utterance, "[^[:alpha:]]")) != 0) %>%
+  # remove superfluous columns
+  dplyr::select(-fileinfo, -rawcontent, -situation)
+```
+
+```{r childes_01_27, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(childes)) %>%
+  flextable::autofit()
+```
+
+## Saving data to your computer{-}
+
+To save results on your computer, you can use the `write.table` function as shown below.
+
+```{r childes_01_65, message=F, warning=F}
+write.table(childes, here::here("data", "EngUK_Thomas.txt"), sep = "\t", row.names = F)
+```
+
+# Tommerdahl{-}
+
+## Preparation{-}
+
+Before we do anything else, we prepare our session. 
+
+```{r prep0, eval = T, message=F, warning=F}
+# specify path to corpus
+corpuspath <- here::here("data/Eng-UK", "Tommerdahl")
+```
+
+## Data processing
+
+In a first step, we create a list called `cha` with the paths to the individual files in the corpus. 
+
+```{r childes_01_03, message=F, warning=F}
+# list corpus files
+cha = list.files(path = corpuspath, 
+                 pattern = ".cha$", 
+                 all.files = T,
+                 full.names = T, 
+                 recursive = T, 
+                 ignore.case = T)
+# use only first 6 files for testing
+#cha <- cha[1:6]
+# check the first 6 file paths
+head(cha)
+```
+
+We now load the data and split it up into files. 
+
+```{r childes_01_04, message=F, warning=F}
+# create version of corpus fit for concordancing
+corpus <- sapply(cha, function(x) {
+  # load data
+  x <- scan(x, what = "char", sep = "\t", quiet = T, quote = "", skipNul = T, encoding = "UTF-8")
+  # clean data
+  x <- iconv(x, from = "UTF-8", to = "ASCII", sub = "")
+  x <- stringr::str_trim(x, side = "both") # remove superfluous white spaces at the edges of strings
+  x <- stringr::str_squish(x)              # remove superfluous white spaces within strings
+  x <- paste0(x, collapse = " ")           # paste all utterances in a file together
+  # split files into individual utterances
+  x <- strsplit(gsub("([%|*][a-z|A-Z]{1,4}[0-9]{0,1}:)", "~~~\\1", x), "~~~")
+})
+# inspect results
+str(corpus[1:3])
+```
+
+We have now loaded the files into R, but the format is not yet structured in a why that we can use it - remember: we want the data to be in a tabular format.
+
+
+
+Now, we extract information about the recording, e.g., the participants, the age of the child, the date of the recording etc. 
+
+```{r childes_01_05, message=F, warning=F}
+# extract file info for each file
+fileinfo <- sapply(corpus, function(x){ 
+  # extract first element of each corpus file because this contains the file info
+  x <- x[1]
+  })
+#inspect
+fileinfo[1:3]
+```
+
+Now, we have one element for each file that contains all the relevant information about the file, like when the recording took place, how old the target child was, how was present during the recording etc.
+
+  
+```{r childes_01_06, message=F, warning=F}
+content <- sapply(corpus, function(x){
+  x <- x[2:length(x)]
+  x <- paste0(x, collapse = " ")
+  x <- stringr::str_split(stringr::str_replace_all(x, "(\\*[A-Z])", "~~~\\1"), "~~~")
+})
+# inspect data
+content[[1]][1:6]
+```
+
+The data now consists of utterances but also the pos-tagged utterances and any comments. However, we use this form of the data to extract the clean utterances, the pos-tagged utterances and the comments and store them in different columns. 
+
+Now, we extract how many elements (or utterances) there are in each file by looping over the `content` object and extracting the number of elements within each element of the `content` object by using the `lenght` function. 
+
+```{r childes_01_07, message=F, warning=F}
+elements <- sapply(content, function(x){
+  x <- length(x)
+})
+# inspect
+head(elements)
+```
+
+We now have the file names, the metadata for each file, and the content of each file (that is split into utterances). We use this information to generate a first table which holds the file name in one column, the file information in one column, and the raw file content in another column.  
+
+```{r childes_01_08, message=F, warning=F}
+files <- rep(names(elements), elements)
+fileinfo <- rep(fileinfo, elements)
+rawcontent <- as.vector(unlist(content))
+chitb <- data.frame(1:length(rawcontent),
+                    files,
+                    fileinfo,
+                    rawcontent)
+```
+
+The table in its current form is shown below. We can see that the table has three columns: the first column holds the path to each file, the second contains the file information, and the third the utterances.
+
+```{r childes_01_09, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(chitb, 3)) %>%
+  flextable::autofit()
+```
+
+## Process table{-}
+
+We can now use the information in the two last columns to extract specific pieces of information from the data (which we will store in additional columns that we add to the table). 
+
+```{r childes_01_10, message=F, warning=F}
+childes <- chitb %>%
+  # rename id column
+  dplyr::rename(id = colnames(chitb)[1]) %>%
+  # clean file names
+  dplyr::mutate(files = gsub(".*/(.*?).cha", "\\1", files))
+```
+
+Let's have a look at the data.
+
+```{r childes_01_12, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(childes, 3)) %>%
+  flextable::autofit()
+```
+
+We now continue in the same manner (by remove what is before what interests us and what comes after) and thereby extract pieces of information that we store in new columns.
+
+```{r childes_01_14, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(speaker = stringr::str_remove_all(rawcontent, ":.*"),
+                speaker = stringr::str_remove_all(speaker, "\\W"))
+```  
+
+Creating an utterance column.
+
+```{r childes_01_15, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(utterance = stringr::str_remove_all(rawcontent, "%mor:.*"),
+                utterance = stringr::str_remove_all(utterance, "%gpx:.*"),
+                utterance = stringr::str_remove_all(utterance, "%act:.*"),
+                utterance = stringr::str_remove_all(utterance, "%par:.*"),
+                utterance = stringr::str_remove_all(utterance, "%add:.*"),
+                utterance = stringr::str_remove_all(utterance, "%pho:.*"),
+                utterance = stringr::str_remove_all(utterance, "\\*\\w{2,6}:"),
+                utterance = stringr::str_remove_all(utterance, ".{1,1}[0-9]{3,}.*"),
+                utterance = stringr::str_remove_all(utterance, "\\*[A-Z]{1,6}[0-9]{0,2}:"),
+                utterance = stringr::str_remove_all(utterance, "@.*"),
+                utterance = stringr::str_remove_all(utterance, "\\[.*?\\]"),
+                utterance = stringr::str_remove_all(utterance, "\\+|\\&"),
+                utterance = stringr::str_squish(utterance))
+```  
+
+
+Creating a  column with comments. 
+
+```{r childes_01_17, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(comment = stringr::str_remove_all(rawcontent, ".*%gpx:"),
+                comment = stringr::str_remove_all(comment, ".*.{1,1}[0-9]{3,}.*"),
+                comment = stringr::str_squish(comment))
+```  
+
+Creating a  column with the participants that were present during the recording.
+
+```{r childes_01_18, message=F, warning=F}
+childes <- childes %>%  
+  dplyr::mutate(participants = gsub(".*@Participants:(.*?)@.*", "\\1", fileinfo))
+```  
+
+Creating a  column with the age of the target child. 
+
+```{r childes_01_19, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(age_targetchild = gsub(".*\\|([0-9]{1,3};[0-9]{1,3}\\.[0-9]{0,3})\\|.*", "\\1", fileinfo)) 
+```  
+
+Creating a  column with the age of the target child in years.
+
+```{r childes_01_20, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(age_years_targetchild = stringr::str_remove_all(age_targetchild, ";.*")) 
+```  
+
+Creating a  column with the location.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(location = gsub(".*@Location:", "", fileinfo),
+                location = gsub("@.*", "", location))
+```
+
+Creating columns with the location where the recording took place and the situation type of the recording.
+
+```{r childes_01_23, message=F, warning=F}
+childes <- childes %>%  
+  # create situation column
+  dplyr::mutate(situation = gsub(".*@Situation:", "", fileinfo),
+                situation = gsub("@.*", "", situation))
+```  
+
+Creating a  column with the date.
+
+```{r childes_01_21, message=F, warning=F}
+childes <- childes %>%
+  dplyr::mutate(date = gsub(".*@Date:", "", fileinfo),
+                date = gsub("@.*", "", date))
+```
+
+Creating a column with the number of words in each utterance.
+
+```{r childes_01_25, message=F, warning=F}
+childes <- childes %>%  
+  # create words column
+  dplyr::mutate(words = stringr::str_replace_all(utterance, "\\W", " "),
+                words = stringr::str_squish(words),
+                words = stringr::str_count(words, "\\w+"))
+```  
+
+Add collection and corpus column and change files to tarsncript_id.
+
+```{r}
+childes <- childes %>%  
+  # create words column
+  dplyr::mutate(collection = "EngUK",
+                corpus = "Tommerdahl") %>%
+  dplyr::rename(transcript_id = files)
+```
+
+Cleaning the data: removing rows without speakers, rows where the age of the target child was incorrect, and removing superfluous columns.
+
+```{r childes_01_26, message=F, warning=F}
+childes <- childes %>%  
+  # remove rows without speakers (contain only metadata)
+  dplyr::filter(speaker != "") %>%
+  # remove rows with incorrect age of child
+  dplyr::filter(nchar(age_years_targetchild) < 5) %>%
+  # remove utterances without content
+  dplyr::filter(nchar(stringr::str_remove_all(utterance, "[^[:alpha:]]")) != 0) %>%
+  # remove superfluous columns
+  dplyr::select(-fileinfo, -rawcontent, -situation)
+```
+
+```{r childes_01_27, echo = F, message=F, warning=F}
+# inspect data
+flextable::flextable(head(childes)) %>%
+  flextable::autofit()
+```
+
+## Saving data to your computer{-}
+
+To save results on your computer, you can use the `write.table` function as shown below.
+
+```{r childes_01_65, message=F, warning=F}
+write.table(childes, here::here("data", "EngUK_Tommerdahl.txt"), sep = "\t", row.names = F)
+```
+
+***
+
+# Citation & Session Info {-}
+
+Schweinberger, Martin. `r format(Sys.time(), '%Y')`. *Working with the Child Language Data Exchange System (CHILDES) using R*. Tromsø: The Artic University of Norway. url: https://slcladal.github.io/mmws.html (Version `r format(Sys.time(), '%Y.%m.%d')`).
+
+```
+@manual{schweinberger`r format(Sys.time(), '%Y')`mmws,
+  author = {Schweinberger, Martin},
+  title = {Working with the Child Language Data Exchange System (CHILDES) using R},
+  note = {https://slcladal.github.io/mmws.html},
+  year = {2021},
+  organization = "Arctic University of Norway, AcqVA Aurora Center},
+  address = {Tromsø},
+  edition = {`r format(Sys.time(), '%Y.%m.%d')`}
+}
+```
+
+```{r fin}
+sessionInfo()
+```
+
+***
+
+[Back to top](#introduction)
+
+***
+

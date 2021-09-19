@@ -1,0 +1,266 @@
+---
+title: "Working with the Child Language Data Exchange System (CHILDES) using R: code book "
+author: "Martin Schweinberger"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output:
+  html_document:
+    theme: cosmo
+    highlight: tango
+bibliography: bibliography.bib
+link-citations: yes
+---
+
+![aqcva]("https://slcladal.github.io/images/acqva.jpg")
+
+# Preparation
+
+```{r prep0, emessage=F, warning=F}
+# set options
+options(stringsAsFactors = F)          # no automatic data transformation
+options("scipen" = 100, "digits" = 12) # suppress math annotation
+options(max.print=1000)                # show maximally 1000 elements in the output
+# install packages
+install.packages(c("tidyverse"))
+```
+
+In a next step, we activate the packages that we have installed.
+
+```{r prep2, eval = T, echo = F, message=F, warning=F}
+library(tidyverse)
+```
+
+Before we continue, it is important to think about what we want to do!
+
+In this workshop, we want to load the CHILDES data and convert the data into a format that we can then use to extract information from it. Optimally, the data should have the following format once we have processed the data:
+
+```{r childes_01_02, echo = F, message=F, warning=F}
+id <- data.frame(1:6)
+id <- id %>%
+  dplyr::rename("id" = colnames(id)[1]) %>%
+  dplyr::mutate(file = c("aab", "aab", "aab", "aab", "aab", "aab"),
+                childage = c("4;6", "4;6", "4;6", "4;6", "4;6", "4;6"),
+                child = c("ben", "ben", "ben", "ben", "ben", "ben"),
+                speaker = c("MOT", "MOT", "ben", "MOT", "ben", "MOT"),
+                utterance = c("How are you ?", "Ben ?", "Okay", "Are you hungry ?", "No", "Sure ?"),
+                tagged = c("How|WH are|BE you|PN ?|PC", "Ben|NNP ?|PC", "Okay|RB", "Are|BE you|PN hungry|JJ ?|PC", "No|NG", "Sure|RB ?|PC"),
+                comment = c("", "", "", "", "shakes head", ""))
+# inspect data
+id
+```
+
+So we want to have the data in a tabular format and in this table, each utterance is in a separate line and each line should also contain information about the speaker and the file.
+
+
+# Case studies
+
+Now that we have the data in a format that we can use, we can use this table to perform searches.
+
+In case the above processing has not worked for you, simply visit `https://github.com/AcqVALab/RCHILDES/` and download the file manually. If you store that file in your `data` folder, you can load it by executing the code chunk below.
+
+```{r childes_01_40b, message=F, warning=F}
+childes <- base::readRDS(url("https://slcladal.github.io/data/childes.rda", "rb"))
+# inspect data
+childes[1:3, 1:4]
+```
+
+
+## Example 1: Extract uses of the word "No" by children 
+
+To extract all instances of a single word, in this example the word *no*, that are uttered by a specific interlocutor we filter by speaker and define that we only want rows where the speaker is equal to `CHI` (target child).
+
+
+```{r childes_01_41, message=F, warning=F}
+no <- childes %>%
+  dplyr::filter(speaker == "CHI") %>%
+  dplyr::filter(stringr::str_detect(utterance, "\\b[Nn][Oo]\\b"))
+```
+
+
+```{r childes_01_42, echo = F, message=F, warning=F}
+# inspect data
+head(no)
+```
+
+We summarize the results in a table. 
+
+```{r childes_01_43, message=F, warning=F}
+no_no <- no %>%
+  dplyr::group_by(files, gender_targetchild, age_years_targetchild) %>%
+  dplyr::summarise(nos = nrow(.))
+head(no_no)
+```
+
+
+We can also extract the number of words uttered by children to check if the use of *no* shows a relative increase or decrease over time.
+
+```{r childes_01_44, message=F, warning=F}
+no_words <- childes %>%
+  dplyr::filter(speaker == "CHI") %>%
+  dplyr::group_by(files, gender_targetchild, age_years_targetchild) %>%
+  dplyr::mutate(nos = stringr::str_detect(utterance, "\\b[Nn][Oo]\\b")) %>%
+  dplyr::summarise(nos = sum(nos),
+                   words = sum(words)) %>%
+  # add relative frequency
+  dplyr::mutate(freq = round(nos/words*1000, 3))
+# inspect data
+head(no_words)
+  
+```
+
+We can also visualize the trends using the `ggplot` function . To learn how to visualize data in R see [this tutorial](https://slcladal.github.io/dviz.html).
+
+```{r childes_01_45, message=F, warning=F}
+no_words %>%
+  dplyr::mutate(age_years_targetchild = as.numeric(age_years_targetchild)) %>%
+  ggplot(aes(x = age_years_targetchild, y = freq)) +
+  geom_smooth() +
+  theme_bw() +
+  labs(x = "Age of target child", y = "Relative frequency of NOs \n (per 1,000 words)")
+```
+
+
+## Example 2: Extracting all questions by mothers
+
+Here, we want to extract all questions uttered by mothers. We operationalize questions as utterances containing a question mark.
+
+```{r childes_01_50, message=F, warning=F}
+questions <- childes %>%
+  dplyr::filter(speaker == "MOT") %>%
+  dplyr::filter(stringr::str_detect(utterance, "\\?"))
+# inspect data
+head(questions)
+```
+
+We could now check if the rate of questions changes over time.
+
+
+```{r childes_01_51, message=F, warning=F}
+qmot <- childes %>%
+  dplyr::filter(speaker == "MOT") %>%
+  dplyr::mutate(questions = ifelse(stringr::str_detect(utterance, "\\?") == T, 1,0),
+                utterances = 1) %>%
+  dplyr::group_by(age_years_targetchild) %>%
+  dplyr::summarise(utterances = sum(utterances),
+                questions = sum(questions),
+                percent = round(questions/utterances*100, 2))
+# inspect data
+head(qmot)
+```
+
+```{r childes_01_52, message=F, warning=F}
+qmot %>%
+  dplyr::mutate(age_years_targetchild = as.numeric(age_years_targetchild)) %>%
+  ggplot(aes(x = age_years_targetchild, y = percent)) +
+  geom_smooth() +
+  theme_bw() +
+  labs(x = "Age of target child", y = "Percent \n (questions)")
+```
+
+## Example 3: Extracting aux + part by mothers 
+
+Here we want to extract all occurrences of an auxiliary plus a participle (e.g. *is swimming*) produced by mothers.
+
+```{r childes_01_55, message=F, warning=F}
+auxv <- childes %>%
+  dplyr::filter(speaker == "MOT") %>%
+  dplyr::filter(stringr::str_detect(postag, "aux\\|\\S{1,} part\\|"))
+# inspect data
+head(auxv)
+```
+
+We can now extract all the particle forms from the pos-tagged utterance
+
+
+```{r childes_01_56, message=F, warning=F}
+auxv_verbs <- auxv %>%
+  dplyr::mutate(participle = gsub(".*part\\|(\\w{1,})-.*", "\\1", postag)) %>%
+  dplyr::pull(participle)
+head(auxv_verbs)
+```
+
+```{r childes_01_57, message=F, warning=F}
+auxv_verbs_df <- auxv_verbs %>%
+  as.data.frame(.)  %>%
+  dplyr::rename("verb" = colnames(.)[1]) %>%
+  dplyr::group_by(verb) %>%
+  dplyr::summarise(freq = n()) %>%
+  dplyr::arrange(-freq) %>%
+  head(20)
+# inspect
+head(auxv_verbs_df)
+```
+
+We can again visualize the results. In this case, we create a bar plot (see the `geom_bar`).
+
+```{r childes_01_58, message=F, warning=F}
+auxv_verbs_df %>%
+  ggplot(aes(x = reorder(verb, -freq), y = freq)) +
+  geom_bar(stat = "identity") +
+  theme_bw() +
+  labs(x = "Verb", y = "Frequency") +
+  theme(axis.text.x = element_text(angle = 90))
+```
+
+
+## Example 4: How many verbs do children use by age? 
+
+Here we extract all lexical verbs and words uttered by children by year and then see if the rate of verbs changes over time.
+
+```{r childes_01_60, message=F, warning=F}
+nverbs <- childes %>%
+  dplyr::filter(speaker == "CHI") %>%
+  dplyr::mutate(nverbs = stringr::str_count(postag, "^v\\|| v\\|"),
+  age_years_targetchild = as.numeric(age_years_targetchild)) %>%
+  dplyr::group_by(age_years_targetchild) %>%
+  dplyr::summarise(words = sum(words),
+                verbs = sum(nverbs)) %>%
+  dplyr::mutate(verb.word.ratio = round(verbs/words, 3))
+# inspect data
+nverbs
+```
+
+
+We can also visualize the results to show any changes over time. 
+
+```{r childes_01_61, message=F, warning=F}
+nverbs %>%
+  ggplot(aes(x = age_years_targetchild, y = verb.word.ratio)) +
+  geom_line() +
+  coord_cartesian(ylim = c(0, 0.2)) +
+  theme_bw() +
+  labs(x = "Age of target child", y = "Verb-Word Ratio")
+```
+
+
+***
+
+# Citation & Session Info 
+
+Schweinberger, Martin. `r format(Sys.time(), '%Y')`. *Working with the Child Language Data Exchange System (CHILDES) using R: code book*. Tromsø: The Artic University of Norway. url: https://slcladal.github.io/mmws.html (Version `r format(Sys.time(), '%Y.%m.%d')`).
+
+```
+@manual{schweinberger`r format(Sys.time(), '%Y')`mmws,
+  author = {Schweinberger, Martin},
+  title = {Working with the Child Language Data Exchange System (CHILDES) using R},
+  note = {https://slcladal.github.io/mmws.html},
+  year = {2021},
+  organization = "Arctic University of Norway, AcqVA Aurora Center},
+  address = {Tromsø},
+  edition = {`r format(Sys.time(), '%Y.%m.%d')`}
+}
+```
+
+```{r fin}
+sessionInfo()
+```
+
+
+***
+
+[Back to top](#introduction)
+
+***
+
+
+
+
