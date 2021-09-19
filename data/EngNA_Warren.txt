@@ -1,0 +1,2006 @@
+"collection"	"corpus"	"child"	"sex"	"age"	"transcript_id"	"utterance"	"words"	"id"
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"you know how to"	4	1
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"you can't look at it"	6	2
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"okay"	1	3
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"yes"	1	4
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"yeah"	1	5
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"like that"	2	6
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"yeh"	1	7
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I don't know"	4	8
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"um um"	2	9
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"uh huh"	2	10
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"the story of Babaar the little elephant"	7	11
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"in the great forest a little elephant is born"	9	12
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"his name is Babaar"	4	13
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"his mother loves him very much"	6	14
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"she rocked him to sleep with her trunk"	8	15
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"while ah"	2	16
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"sings"	1	17
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"softly to him"	3	18
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Babaar has growing bigger"	4	19
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"he now plays with the other little elephants"	8	20
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"he is a"	3	21
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"very good little elephant"	4	22
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"see him digging in the sand with his shell"	9	23
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Babar is riding happy on his mother's back"	9	24
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"xxx"	1	25
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"hidden behind some bushes"	4	26
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"he"	1	27
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"shoots at them"	3	28
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"the hunter has killed Babar's mother"	7	29
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"the the"	2	30
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mother"	1	31
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"monkeys"	1	32
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"hide and birds fly away"	5	33
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Babar cries"	2	34
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"the hunter runs up to catch Babar"	7	35
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"poor Babar"	2	36
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Babar runs away"	3	37
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"be is"	2	38
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"is afraid of the hunter"	5	39
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"after several days very tired"	5	40
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yuck yuck yuck"	3	41
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"indeed"	1	42
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"oh"	1	43
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"he"	1	44
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"a scorpion with a baby on the back"	8	45
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"comes to a town"	4	46
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"oh"	1	47
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I saw that page already today in Mrs Lynk's book"	11	48
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"he"	1	49
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"hardly"	1	50
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"nothing"	1	51
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yeh this picture I saw it today"	7	52
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"knows"	1	53
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"what to"	2	54
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I know"	2	55
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yeh look at the baby ones"	6	56
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"yeh"	1	57
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"make"	1	58
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"of"	1	59
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"um I don't know"	5	60
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"it"	1	61
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I won"	2	62
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"because he"	2	63
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I don't know"	4	64
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"this is the"	3	65
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"um I don't know"	5	66
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yuck"	1	67
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"first"	1	68
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"time"	1	69
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I don't think so"	5	70
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"that he"	2	71
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"xxx"	1	72
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"nope"	1	73
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"has"	1	74
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"no no no"	3	75
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"no"	1	76
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"oh yuck"	2	77
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I don't know"	4	78
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"a spider"	2	79
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"seen"	1	80
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yuck"	1	81
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yuck"	1	82
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"so much"	2	83
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"sticker"	1	84
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"and a dress for a Barbie doll and a wheel and part of a necklace and a shoestring and a ring or whatever"	23	85
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"many"	1	86
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"houses"	1	87
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"about nothing"	2	88
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"all I did is sit"	5	89
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"sit"	1	90
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"sit sit"	2	91
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"a bracelet"	2	92
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"a key a coat+hanger"	5	93
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"mhm"	1	94
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"um"	1	95
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"piece of paper"	3	96
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"what do you think I made"	6	97
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"and i and a j and a pencil broken and a button and a chain and a ring and a crayon and a peanut two j"	26	98
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I didn't draw it"	5	99
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I colored it"	3	100
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"okay"	1	101
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I don't see them"	5	102
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"that's a rabbit"	4	103
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"safety pin"	2	104
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"um hm"	2	105
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"string string string string"	4	106
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"mhm"	1	107
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"um hm"	2	108
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"capital"	1	109
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"umum"	1	110
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"a lower case"	3	111
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"this is a snake"	4	112
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I know I know"	4	113
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"no"	1	114
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"there's gerbils back here"	5	115
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I think we wear it May the third"	8	116
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I remember I think"	4	117
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"want to show you at it does"	7	118
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I think there's I think there's gerbils"	9	119
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"mhm"	1	120
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"there's the gerbils"	4	121
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"no"	1	122
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"xxx"	1	123
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"you do"	2	124
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"that's a stocking"	4	125
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"no but Joel told me"	5	126
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"a"	1	127
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"achoo"	1	128
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"mhm"	1	129
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"we need to get one of these or a um exercise ball"	12	130
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"beautiful buttons"	2	131
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I am"	2	132
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"this is my purse"	4	133
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"c is cotton candy"	4	134
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"that's the same thing as this"	7	135
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"this is yours"	3	136
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"d is delicious donuts"	4	137
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"we need to get one of those things"	8	138
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"it's a hat"	4	139
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I already told you about c"	6	140
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Carrie's elephant"	3	141
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yeh"	1	142
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I saw a little toy for em"	7	143
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Carrie's ladybug"	3	144
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"uh huh cotton candy"	4	145
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"at K_Mart"	3	146
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mother purse rubber pants"	4	147
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"looked like it at least"	5	148
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"and e exercise"	3	149
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"and"	1	150
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mhm xxx and some shapes"	5	151
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"looked like another little gerbil"	5	152
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"f funny feet"	3	153
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"a dog"	2	154
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"it looked like a real one"	6	155
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"but they're big"	4	156
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"another dog"	2	157
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"and"	1	158
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yeh"	1	159
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"a shoestring a shoe"	4	160
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"gooey gum"	2	161
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"and h Harry hair"	4	162
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"okay"	1	163
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"probably"	1	164
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"scratchy scratch"	2	165
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I didn't catch it"	5	166
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"you catch the ball"	4	167
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"try to eat em"	4	168
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"itchy itch"	2	169
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I guess"	2	170
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"and"	1	171
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"jumble junk+man"	3	172
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"elephants would"	2	173
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"kicking kick"	2	174
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yeh"	1	175
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"at least I think I seen them on cartoons"	9	176
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"licking lollipops"	2	177
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"okay"	1	178
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"munchy mouth"	2	179
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I like that baby gerbil I mean"	7	180
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"noisy nose"	2	181
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"oppsidifit"	1	182
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"hamster"	1	183
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"Sam Sam died"	3	184
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I know it's funny"	5	185
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"but he was a lot older than they were supposed to be"	12	186
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"quiet"	1	187
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"oh pointy patches"	3	188
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"um old"	2	189
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"well they usually live one and a half years or two"	11	190
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"quiet"	1	191
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"ribby rubber bands"	3	192
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"we're supposed to"	4	193
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"years but he lived to three"	6	194
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"bring a bird the prettiest"	5	195
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"s Super Sox"	3	196
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"and he was real old"	5	197
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"tall teeth"	2	198
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"uh huh"	2	199
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"he died"	2	200
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"he got sick and died"	5	201
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"u"	1	202
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"color it"	2	203
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"umbrella"	1	204
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"um violent velvet vest"	4	205
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"the prettiest picture that we saw"	6	206
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"uh huh"	2	207
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"ah that"	2	208
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"what is that I think"	5	209
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"violent velvet vest"	3	210
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"you're a bird"	4	211
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I didn't see any"	5	212
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"w"	1	213
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"winky wink"	2	214
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"can't see"	3	215
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"what"	1	216
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I bop I'm not reading"	6	217
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"x"	1	218
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I don't know what his name"	7	219
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"big bird's back yard"	5	220
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"that's it"	3	221
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"no"	1	222
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"um hm and we have_to do and um the parents can help us with the name what the bird is"	21	223
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"just the line I know"	5	224
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"can't"	2	225
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"Ex_caliber"	2	226
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"Ranger Rick and his friends"	5	227
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	228
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"y yawny yawn"	3	229
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"well in_case it was"	5	230
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"bird name is"	3	231
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"xxx"	1	232
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I forgot"	2	233
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"zippering zippers"	2	234
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"but what happened in farmer boy oh I remember is that their Monzo was put a wailing over the cows"	20	235
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yes"	1	236
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"we have um"	3	237
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"from may something we have_to um make something to put on because we're having a letter people parade"	20	238
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"all of them"	3	239
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no they're horses"	4	240
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"what's thistle"	3	241
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"the cows"	2	242
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Mr z"	2	243
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"a b c d e f g h i j k l m n o p"	16	244
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"oh you want to get some of those to come"	10	245
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"because I looked on the front"	6	246
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"q r s t u v w x y"	9	247
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	248
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Mr zipping zippers"	3	249
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I'll show it to her"	6	250
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"y z"	2	251
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"want me to show it to ya"	7	252
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"you could get buy some"	5	253
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"uh huh"	2	254
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"now I know"	3	255
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"nun uh"	2	256
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"dese in dat book"	4	257
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"we have_to make a z on it and then we have_to make a zipper"	16	258
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"my abcs"	2	259
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"we did dat book before right"	6	260
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I know"	2	261
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"next time won't you sing with me"	8	262
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"xxx no dis"	3	263
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"see see what he does"	5	264
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"let's do dis one"	5	265
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I don't know"	4	266
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"that does"	2	267
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"it crushes it"	3	268
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"who"	1	269
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"he gets it in his mouth and crushes it"	9	270
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"no we're supposed to be Mr Z"	8	271
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"and takes the shell and drops that spits it out then he eats the inside"	15	272
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"Mommy"	1	273
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I was well"	3	274
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"Jeffrey eats them sometimes"	4	275
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I thought like it said in Peter rabbit"	8	276
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Mr Super Sox we have_to fly up in the air"	11	277
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I'm not"	3	278
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"kookookookoo"	1	279
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I've never ate them"	5	280
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where brown"	2	281
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"on the good old boys and xxx find that page"	10	282
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"why"	1	283
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"okay"	1	284
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where brown"	2	285
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"well what you're supposed to do with Mr_S"	10	286
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"you're supposed to um get on a thing and then jump down and pretend like you're flying"	19	287
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"mhm"	1	288
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I'm looking"	3	289
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I don't know"	4	290
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"mhm"	1	291
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"this one"	2	292
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"the end of it"	4	293
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"end and if you meets"	5	294
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I don't know"	4	295
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I think they eat that part too"	7	296
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and to this day if you meet nut can and"	10	297
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"playing"	1	298
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"it was last night"	4	299
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"mhm"	1	300
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"up and"	2	301
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"mhm"	1	302
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"tree"	1	303
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"um we go and ride it it's a new ride over water"	13	304
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"mhm"	1	305
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and ask him a widdle on a w"	8	306
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"on a"	2	307
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"no"	1	308
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"he will"	2	309
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"hmhm"	1	310
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"throw sticks at you and shout"	6	311
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"it's not too pretty when it's"	8	312
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and stount"	2	313
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I want to show Daddy the picture of the gerbils"	10	314
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I don't"	3	315
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and stamp"	2	316
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and stamp"	2	317
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"scold Kookoo"	2	318
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"you did"	2	319
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"yeah we went on a log and we went up and down the hill"	14	320
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and shot Kookookoo"	3	321
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"she came here"	3	322
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"igwan"	1	323
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mhm"	1	324
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"look at all those"	4	325
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Carowinds"	1	326
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"playing"	1	327
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"making a dam and it overfloweded"	6	328
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I can see them from here"	6	329
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"mailbox"	1	330
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"look at these"	3	331
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"talk about it"	3	332
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"mhm"	1	333
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I don't know"	4	334
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"we were on the uh bricks and all of a sudden a gush of wind came and it got um it made the water go up to the bricks and made it overflow"	33	335
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"Peter Wabbit"	2	336
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"count I can't"	4	337
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mm it's Showbiz pizza place"	6	338
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"this is Peter Wabbit"	4	339
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"there's some iguanas"	4	340
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"you know how you can tell"	6	341
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"um hm"	2	342
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"bleagh"	1	343
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"because"	1	344
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I would hate to have one"	6	345
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I don't want to talk"	6	346
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"that's how we got wet"	6	347
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"um"	1	348
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"it might be Flopsie but"	5	349
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"do you"	2	350
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"do you"	2	351
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Billy Bob"	2	352
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"mhm"	1	353
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"why should I"	3	354
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"right here"	2	355
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	356
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"um hm"	2	357
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"Travis and Kevin"	3	358
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"pumpkin"	1	359
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"what"	1	360
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no no"	2	361
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"because he has a little jacket on"	7	362
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I don't know"	4	363
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"yeah"	1	364
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"a dear little jacket"	4	365
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"are ya gonna talk to it without the puzzles out_of it"	12	366
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"fwa"	1	367
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"that's what we are"	5	368
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"what are they"	3	369
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"no"	1	370
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"uh huh"	2	371
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I digged"	2	372
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and some blue on them"	5	373
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mhm"	1	374
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"oh"	1	375
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"and ate pancakes and digged"	5	376
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"blue"	1	377
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"okay"	1	378
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	379
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"um Jeff um Ricky has some valuable rocks he calls them because they're real shiny"	16	380
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"um bumpers"	2	381
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"junction"	1	382
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"yep"	1	383
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"um a widdle one or this one"	7	384
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"no down here in the dirt"	6	385
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"there"	1	386
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	387
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"Pac_Man"	2	388
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"in the yard"	3	389
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"um"	1	390
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"he has lots_of rocks around the yard I'll show ya"	12	391
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"this one"	2	392
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"there"	1	393
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"it's your turn"	4	394
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I know"	2	395
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"Pac_Man"	2	396
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"yeh"	1	397
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"not all"	2	398
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"no that's"	3	399
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I did see some one with some pink on it"	10	400
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"a tail"	2	401
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"that's not my favorite game but Pac_Man is"	10	402
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"xxx"	1	403
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"yeh"	1	404
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"turn this wrong"	3	405
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"a frog has a tail"	5	406
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I was gonna give it to Laura"	7	407
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"xxx"	1	408
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"yeh that's the last"	5	409
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"and one night I always play that"	7	410
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"she'll love it when I get it"	8	411
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"it's my turn"	4	412
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I play"	2	413
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"know what"	2	414
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"a tiger has a tail"	5	415
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"um there's some more"	5	416
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"when Michael brought us and Heidi came um um um"	10	417
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"um um"	2	418
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"no"	1	419
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I played that worm game"	5	420
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"no"	1	421
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"putting that puzzle together"	4	422
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	423
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"see if I can trick it"	6	424
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I played that worm game and I went and I shot them off"	13	425
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"at K_Mart"	3	426
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"um Candyland"	2	427
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"aw that's the way it looks like"	8	428
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"yeh"	1	429
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"let's see if I can trick it"	8	430
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"let me see"	3	431
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"a one I'll show ya"	6	432
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"aw so this is the way it looks with the lights on that's how it looks like with the lights off"	22	433
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"um"	1	434
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"yeh"	1	435
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I will have_to put my arms and my feet up just"	12	436
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"well why does it go there"	6	437
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I got it with my own money"	7	438
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"ice cream"	2	439
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"think it does"	3	440
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"oh boy"	2	441
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"only I only got two"	5	442
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"there are some gerbils in this book here"	8	443
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I don't know"	4	444
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"from my allowance"	3	445
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"it does"	2	446
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I'm gonna have_to put my feet up"	9	447
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"no"	1	448
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yeh"	1	449
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"no"	1	450
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"because I can't make those arms because it looks like this"	12	451
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"they're gerbils"	3	452
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"fifty cents a week"	4	453
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"cup"	1	454
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"it has_to go like this"	6	455
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"uh huh"	2	456
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I know"	2	457
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	458
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"okay"	1	459
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"gerbils"	1	460
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"hm oh that goes right there"	6	461
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"that's the babies"	4	462
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"about three dollars twenty eight"	5	463
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"mhm"	1	464
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mhm"	1	465
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"seven eight nine ten"	4	466
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"it's not tols"	4	467
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"okay"	1	468
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	469
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I don't know"	4	470
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"I looked at this and it goes just like that"	10	471
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"it's long and I can't put"	8	472
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"this one is little and you have_to make the x on the little one"	15	473
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"seven"	1	474
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yeh"	1	475
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"with a little fur"	4	476
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"one two three four five six seven eight nine ten"	10	477
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"they're soft"	3	478
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"but only if I got it could be much longer"	10	479
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"what glasses"	2	480
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"okay"	1	481
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"we need one of those or a exercise ball"	9	482
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"oh I unpacked them"	4	483
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"here's part of his tail too"	7	484
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	485
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"one potato two potato three potato four five potato six potato seven potato more"	14	486
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I unpacked them"	3	487
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"now that's a exercise thing"	6	488
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"good"	1	489
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"Teddy bear"	2	490
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"and here's part of his paws"	7	491
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yeh"	1	492
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"they were in the box"	5	493
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"here's part of his paws"	6	494
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"exercise wheel but there's there's another thing that's a exercise ball"	14	495
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"one potato two potato three potato four five potato"	9	496
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I did it good"	4	497
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"Wabbit"	1	498
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	499
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yeh I've seen I've seen the exercise ball"	10	500
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"no"	1	501
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"the one um behind the um behind the glasses"	9	502
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	503
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"for one thing he's a super hero and he's not any kind of doctor"	16	504
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"seven potato more"	3	505
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	506
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"yeah no"	2	507
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"get one"	2	508
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"one potato two potato three potato four five potato six potato seven potato"	13	509
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I don't know"	4	510
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"no"	1	511
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mhm"	1	512
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I don't know"	4	513
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	514
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"ah"	1	515
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"uh probably at a pet store"	6	516
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"no just a regular paint brush I get everything mixed up if I have spray can"	16	517
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"it's different it's"	5	518
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"more"	1	519
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"choo+choo twains"	3	520
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mhm"	1	521
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"looks like"	2	522
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"it's white"	3	523
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"or K_Mart"	3	524
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"no I'm not"	4	525
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"yeah"	1	526
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	527
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"Richway"	1	528
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"what choo+choo twain is the smallest"	7	529
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"no"	1	530
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"that's where I got the cage"	7	531
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"one potato two potato three potato four five potato six potato seven potato more"	14	532
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"no"	1	533
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"the bunny wabbit"	3	534
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"one"	1	535
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"we have big choo+choo twains"	6	536
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"two frogs"	2	537
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"or the ball"	3	538
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"three xxx and three cars"	5	539
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"one potato no one potato two potato three potato four five potato six potato seven potato more"	17	540
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I have one paint brush"	5	541
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Carrie's"	2	542
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"mhm"	1	543
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no because it has spots on it"	7	544
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where little choo+choo twains"	5	545
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I had to wash it off when I wanted to do another color"	13	546
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"no"	1	547
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"three trees"	2	548
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"no Gramma did"	3	549
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"it's different to the wheel"	6	550
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I don't know"	4	551
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"four tug boats"	3	552
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"it's like a ball but you can open it up and put the gerbil in stick the gerbil in"	20	553
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"you tell me"	3	554
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"one potato two no wait"	5	555
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"four mice"	2	556
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"the tiger"	2	557
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Rudolph"	1	558
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"five gloves"	2	559
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"no"	1	560
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"see"	1	561
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"four"	1	562
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	563
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"one potato two potato three potato four five potato six potato seven potato more"	14	564
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"five fingers"	2	565
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	566
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"with the shiny nose"	4	567
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"stwipes"	1	568
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"in the garage of course"	5	569
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no spots"	2	570
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"ya do the same thing"	5	571
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"these are the ones that laugh at him"	8	572
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	573
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"oh one guess how I didn't get paint on the house"	12	574
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"he doesn't he gets out hisself"	7	575
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"six airplanes"	2	576
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"because he has a red nose"	6	577
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and stwipes"	2	578
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"uhhuh"	1	579
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"it's a guinea pig hamster"	6	580
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"one two three"	3	581
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"that's a dog a kitty cat a chicken"	9	582
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"that's a um Mrs Lynx used to have one"	10	583
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"um hm"	2	584
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"and because he didn't and because he had a red nose"	12	585
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and striped"	2	586
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"four five no"	3	587
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I don't know a goat"	6	588
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"Sam"	1	589
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"we didn't count it all yet"	7	590
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"stripes"	1	591
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"less than xxx"	3	592
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"he died"	2	593
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"five six no no no one two three four five six"	11	594
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"hmhm"	1	595
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"no we're"	3	596
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"you better believe it"	4	597
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"he had a"	3	598
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"he was sick"	3	599
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"um he has a twitching nose"	6	600
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"he was real old"	4	601
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"seven grand pianos"	3	602
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"gonna sing out these songs that we sing"	8	603
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"who them"	2	604
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"dis one is red and it has little"	8	605
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"seven pitchers"	2	606
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"mhm"	1	607
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"those are the rabbits"	4	608
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"Jumbles"	1	609
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"the head does"	3	610
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"one two three four five six seven"	7	611
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"Junkmanone"	1	612
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"but it's big"	4	613
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"no lets see"	3	614
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I don't remember"	4	615
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"um"	1	616
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	617
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"um mm"	2	618
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"chicken"	1	619
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"no"	1	620
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I don't remember if I bought any of those with my allowance"	13	621
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"they're just some rabbits"	5	622
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I've seen a real guinea pig"	7	623
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"at sesame street"	3	624
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"only one"	2	625
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"mhm"	1	626
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"there's Santa Claus"	4	627
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yard"	1	628
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"moons"	1	629
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"if you get down to there there's twenty three"	10	630
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"there's some doll there's some Christmas stuff"	9	631
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"neighborhood"	1	632
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I've got_to pet a real guinea pig and feed them"	12	633
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"we have a thing that we um we have a note how we we just keep on prac keep on practicing"	21	634
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"he just eats something up"	5	635
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"hmhm"	1	636
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"um a animal"	3	637
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I'm not"	3	638
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"at Ramsey's house once"	5	639
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"snake"	1	640
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"dis one"	2	641
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"xxx twenty one"	3	642
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"tape recorder"	2	643
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"big bird"	2	644
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"have_to take all these things out"	7	645
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"he's bigger than him"	5	646
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"uh huh"	2	647
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"kitty kitty kitty giddy giddy giddy"	6	648
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"um hm"	2	649
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"a lion"	2	650
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"no"	1	651
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"one"	1	652
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"a map a tornado"	4	653
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"we practice here"	3	654
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	655
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"a toy"	2	656
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"big bird"	2	657
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"yeah"	1	658
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"oh"	1	659
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"there's some kittens"	4	660
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"one two three four five six seven eight nine"	9	661
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"he can't"	3	662
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"okay"	1	663
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"Oscar"	1	664
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"playing and playing with blocks"	5	665
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh huh"	2	666
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"do you have another tiger"	5	667
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"he's a grouch"	4	668
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well these houses with the lines on the outside is when the alarm goes off"	15	669
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"only they can make rabbit noise"	6	670
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"once I made a big house a big building"	9	671
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"ten"	1	672
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"one two three four five six seven eight"	8	673
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I got_to um"	4	674
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"eleven twelve"	2	675
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"what do you want to play"	6	676
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"wonder where he go"	4	677
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"twelve fourteen fifteen sixteen seventeen eighteen nineteen twenty"	8	678
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	679
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"almost looked as bad as yours"	6	680
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"oo"	1	681
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mhm"	1	682
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"and these red dots on the path of the sound waves"	11	683
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"what do you want to play"	6	684
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"okay"	1	685
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"Ernie"	1	686
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"oh"	1	687
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"twenty one twenty two twenty three twenty four twenty five twenty six twenty seven twenty eight twenty nine thirty"	19	688
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"Bert"	1	689
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"mm"	1	690
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mhm"	1	691
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I um I"	3	692
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"Rudolph makes ten"	3	693
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"what"	1	694
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where does he go"	4	695
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well when it gets to the end of the line this goes argh goes"	14	696
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where does he go"	4	697
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"monsters"	1	698
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I don't remember"	4	699
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"thirty one thirty two thirty three thirty four thirty five thirty six thirty seven thirty eight forty nine fifty"	19	700
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"as big as yours"	4	701
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	702
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"ten"	1	703
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	704
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"um twitches his nose"	4	705
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"oh"	1	706
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	707
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"uh I don't know"	5	708
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mm ten"	2	709
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"okay"	1	710
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"that he was a flower"	5	711
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"big church"	2	712
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"uh huh"	2	713
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I mean as as the same as yours"	8	714
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"cookie monster"	2	715
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well if they don't have a basement they get next_to an inside wall"	15	716
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	717
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yeh"	1	718
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"they didn't have any names"	6	719
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"the same as yours"	4	720
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"well we need to mix them up because I'm not really sure"	13	721
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where does it go"	4	722
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	723
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	724
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"a story"	2	725
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I know but I don't know their names"	9	726
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well see they got next_to a window they may be killed by the glass if the tornado went plthh"	20	727
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"forty"	1	728
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	729
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I'm not really sure if they're"	8	730
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	731
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"well I'm not gonna show them"	7	732
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"forty"	1	733
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	734
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no he he can twitch a wabbit nose"	8	735
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"you mix them up alright"	5	736
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"oh"	1	737
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	738
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"no"	1	739
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"Noah's Ark song"	4	740
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"where"	1	741
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"forty one forty two forty three forty three forty four"	10	742
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"um okay I just saw a ace"	7	743
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"Grover"	1	744
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I saw Grover today"	4	745
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I don't know"	4	746
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"but that's alright"	4	747
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"airplanes circling the tornado would you believe"	7	748
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"a junky jewel"	3	749
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"forty five forty six forty seven forty eight forty nine fifty"	11	750
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"on tv"	2	751
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I know it"	3	752
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"or junky toy"	3	753
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"because once I played with Joel's I didn't know if they were mixed up"	16	754
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"uh huh"	2	755
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"makes Mr j"	3	756
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"cookie monster"	2	757
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	758
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"Andy"	1	759
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"fifty one fifty two fifty three fifty four fifty five"	10	760
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"they're getting in a fight"	6	761
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"jump for j joy"	4	762
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well so they don't lose it"	7	763
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"coming down the tree"	4	764
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"fifty six fifty seven fifty eight fifty nine sixty"	9	765
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"ha"	1	766
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I know he go this way"	6	767
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"eleven"	1	768
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"anything that's thrown away"	5	769
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"Mrs Du Priest"	3	770
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"those are the two elves"	5	771
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	772
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"hundred sixty sixty one sixty two sixty three sixty five sixty six sixty"	13	773
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"well he got his toes knocked off"	7	774
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"ya"	1	775
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"here"	1	776
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"is a joy for jumble j"	6	777
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mhm"	1	778
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"they're Santa Claus'"	4	779
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"ten"	1	780
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"there's Carrie's name there's David's there's David's there's Carrie's"	17	781
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"and ten ones are ten"	5	782
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"no"	1	783
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"sixty six sixty seven"	4	784
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"fish"	1	785
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well like if was over Six_flags might of escape and then they"	13	786
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	787
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"mhm"	1	788
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where do the fish go"	5	789
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"sixty eight sixty nine seventy"	5	790
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"no"	1	791
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"that's how he is"	5	792
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"like this"	2	793
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"mhm"	1	794
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"seventy one seventy two seventy three seventy four seventy five seventy six seventy eight"	14	795
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"well he was in Mr McGregor's garden"	8	796
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"that's why I scraped them off"	7	797
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"sometime he does"	3	798
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"oh"	1	799
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"he got lots_of junk on him"	7	800
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"seventy nine seventy seven seventy eight seventy nine eighty"	9	801
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"uh Dad"	2	802
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"mhm"	1	803
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"see mommy"	2	804
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and he he jumped like this one two three"	9	805
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where do"	2	806
+"Eng-NA"	"Warren"	"Beth"	"female"	57	6400	"I do it right"	4	807
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	808
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	809
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"it will take a long time"	6	810
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"eighty one eighty two eighty three eighty four eighty five eighty six eighty seven eighty eight eighty nine ninety"	19	811
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"why would you want to talk about that in this"	10	812
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"then he then he and"	5	813
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I have"	2	814
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"hmhm"	1	815
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I wait for a couple of minutes and watch cartoons"	10	816
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"know what ya mean"	4	817
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"bird cage and fish tank with a fish in it"	10	818
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	819
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"who"	1	820
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"okay where do it go"	5	821
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"ninety one ninety two ninety three ninety four ninety five ninety six ninety seven ninety eight ninety nine one hundred"	20	822
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"and games and j hat"	5	823
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"oh"	1	824
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"uhhuh"	1	825
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"the squirrel"	2	826
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no I want to talk about Peter"	7	827
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"yes and I think that deal is fair"	8	828
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"that's not a grape"	5	829
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"are you gonna do it out_of here or hold them"	11	830
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"once"	1	831
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"sneak up on him and scare him"	7	832
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"captain"	1	833
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"that"	1	834
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	835
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"sometimes we don't even go"	6	836
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"cause he's my favorite one"	6	837
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"mom you forgot this"	4	838
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"that's a j"	4	839
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"boat"	1	840
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"that I would only have_to ride one of the things with you that I wanted to"	17	841
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"nothing much"	2	842
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"ship"	1	843
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"these Sundays we haven't even gone out"	8	844
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I like to play both"	5	845
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yes I have"	3	846
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"oh"	1	847
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"two"	1	848
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	849
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeh"	1	850
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"Grouch"	1	851
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"go here"	2	852
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I like to play uh regular cards that um when Grammy used to play this way before she used to play solitaire xxx"	23	853
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"two two two two two two"	6	854
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"xxx"	1	855
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well you the one you wanted to which was the scream machine"	12	856
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"oh"	1	857
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"two two two"	3	858
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"because"	1	859
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"oh dis"	2	860
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"nothing"	1	861
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"but you can hold them"	5	862
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"two"	1	863
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"Scarey"	1	864
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"xxx"	1	865
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I know"	2	866
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"old shoe"	2	867
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"what's your name"	4	868
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"two two two two two two two"	7	869
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"did you know that Andy told me that we were gonna stay there the whole hour of church"	18	870
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well I thought it was scary"	6	871
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	872
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"um yeh"	2	873
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"right"	1	874
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"what's your name"	4	875
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yes"	1	876
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty twenty one twenty two twenty three twenty four twenty five twenty six"	32	877
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"mhm"	1	878
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where do it go"	4	879
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"that's the daddy"	4	880
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I just want ta play a joke"	7	881
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"mhm"	1	882
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"that's the mommy"	4	883
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh huh"	2	884
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I think you won"	4	885
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"but he"	2	886
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"Matthew I've forgotten"	4	887
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"and there's a truck"	5	888
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"lightning bugs"	2	889
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"there's the baby"	4	890
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I could tell"	3	891
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"but know what Daddy"	4	892
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"what's your name"	4	893
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I just want to know what her name is"	9	894
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	895
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"yeah"	1	896
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"bottle"	1	897
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"no we're missing a baseball player"	7	898
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"it doesn't have_to count to a hundred letters"	10	899
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"I know but Dad um his this is a torn up shoe"	12	900
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"what's in here Amye"	5	901
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"twenty four"	2	902
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"no"	1	903
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	904
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"this is a torn up shoe cause it he he got it from the trash+can cause it's ripped up"	21	905
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what"	1	906
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"what's in here Amye"	5	907
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I don't know what seven and eight is"	9	908
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"yeah"	1	909
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"they fly"	2	910
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	911
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"why"	1	912
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"okay"	1	913
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"light up their light bulbs"	5	914
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"eating um"	2	915
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"thirteen"	1	916
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	917
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"quakes and things"	3	918
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"fourteen"	1	919
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what"	1	920
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"fifteen"	1	921
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"mhm"	1	922
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"okay"	1	923
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	924
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I'm not going to"	5	925
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"yeah"	1	926
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"twenty two"	2	927
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	928
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"twenty one"	2	929
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"fall asleep"	2	930
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"but do they have a lightning"	6	931
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"Marta"	1	932
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen"	16	933
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	934
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"do they have light bulb"	5	935
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"both of us"	3	936
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um um"	2	937
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"yep"	1	938
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I could read the words but I could sing the in the songbook but I xxx"	16	939
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	940
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"tiger"	1	941
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	942
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"their light"	2	943
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"one worm"	2	944
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"okay"	1	945
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"because we forgot to take them out"	7	946
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"eye"	1	947
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"xxx"	1	948
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	949
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"nose"	1	950
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mm"	1	951
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well then what did they do with Billy"	8	952
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"dream about something"	3	953
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"so I won"	3	954
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I put the tiger here"	5	955
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"that cupcake was good"	4	956
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"um"	1	957
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	958
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"put him to bed"	4	959
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I have seventeen"	3	960
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"uh huh"	2	961
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"there's his arm"	4	962
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"it's a tie"	4	963
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"uh huh"	2	964
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"right there"	2	965
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"mm Himbay"	2	966
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I know it"	3	967
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"it was a tie"	4	968
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	969
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"piece of toast"	3	970
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yes"	1	971
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"uhhuh"	1	972
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"he almost bit me oh"	5	973
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I don't know"	4	974
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"how did they know Billy woke up"	7	975
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"cereal"	1	976
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"eat it"	2	977
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I don't know"	4	978
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"looks like"	2	979
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"we knew de songs"	4	980
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"what's that"	3	981
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"here's his arm"	4	982
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	983
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"no"	1	984
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"oh"	1	985
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"a flower that has a eye"	6	986
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"mm"	1	987
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"and there's his fingers"	5	988
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"let's see you've got that"	7	989
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um hm because Andy had a paper dat said all the songs"	12	990
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"Mars Jupiter and mm world"	5	991
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yes"	1	992
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"if the top's off and it's a new batch"	11	993
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well how did he get out_of the car"	9	994
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"sure do"	2	995
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"xxx"	1	996
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"yeah"	1	997
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"it has a eye"	4	998
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"he was asleep"	3	999
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"um I"	2	1000
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	1001
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"uh huh"	2	1002
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"two frogs"	2	1003
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I didn't close my eyes"	6	1004
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"he's made of junk"	5	1005
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I know"	2	1006
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeh"	1	1007
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yes"	1	1008
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"who woke me up"	4	1009
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"boat"	1	1010
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"that's yarn"	3	1011
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"the globe"	2	1012
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"his hair"	2	1013
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"we played tag we"	4	1014
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"making his bed"	3	1015
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I don't know how I really got_to sleep"	10	1016
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"logs"	1	1017
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"played games"	2	1018
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	1019
+"Eng-NA"	"Warren"	"David"	"male"	70	6403	"Junk"	1	1020
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I just close my eyes and then I open them again"	11	1021
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"I can count to a hundred"	6	1022
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what time did we get back"	6	1023
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yes"	1	1024
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	1025
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"uh huh"	2	1026
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"xxx"	1	1027
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh huh"	2	1028
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"I can count to a hundred"	6	1029
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I didn't see any of those I just saw the earth Pluto and Mars"	15	1030
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I have twenty seven"	4	1031
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"we had Bible stories we had punching balls"	8	1032
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"close it"	2	1033
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1034
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well what time is xxx do you think it was"	10	1035
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"gee"	1	1036
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"swim"	1	1037
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"oh"	1	1038
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"yeah"	1	1039
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I don't know"	4	1040
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"we punched it and when somebody hit and it just pushed them down and went boom boom boom"	18	1041
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"king"	1	1042
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1043
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"what"	1	1044
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	1045
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"right"	1	1046
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"I want to look at this"	6	1047
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"xxx I don't know why"	6	1048
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I put it"	3	1049
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	1050
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I don't know"	4	1051
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"they're not stars"	4	1052
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"what"	1	1053
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"mm"	1	1054
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"no"	1	1055
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"the one about Jesus"	4	1056
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I think I got them all"	6	1057
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"mhm"	1	1058
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"huh"	1	1059
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"Jesus and xxx"	3	1060
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"gee"	1	1061
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"that was a lot"	4	1062
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"off the diving board"	4	1063
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"they're stars or they're suns"	7	1064
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"why"	1	1065
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"this one"	2	1066
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	1067
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"eating popcorn candy"	3	1068
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"look at all these"	4	1069
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and his mighty walk"	4	1070
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh Koko's a mime"	5	1071
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I'm gonna go show mommy"	6	1072
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1073
+"Eng-NA"	"Warren"	"Jmarkey"	"male"	63	6408	"does it hurt"	3	1074
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yes"	1	1075
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"nope"	1	1076
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well I surely won't ride the M_B"	9	1077
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"flower"	1	1078
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"she's on fan mail"	5	1079
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"see once he xxx couldn't walk and then"	9	1080
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1081
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	1082
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I know"	2	1083
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"nope"	1	1084
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"whee"	1	1085
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"flower"	1	1086
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I wanna show them"	4	1087
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um hm"	2	1088
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"the mind bender"	3	1089
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"this right here"	3	1090
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"he's the owner of the place"	7	1091
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	1092
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"she just never talks"	4	1093
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"important"	1	1094
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"okay"	1	1095
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"oh yeh"	2	1096
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"no"	1	1097
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what's important to me is not riding the mind bender"	11	1098
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I don't know"	4	1099
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"that's where it goes"	5	1100
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I go like that"	4	1101
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"she's always in makeup and stuff"	7	1102
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"but I don't"	4	1103
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I forgot"	2	1104
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"how many"	2	1105
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I don't know"	4	1106
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"where is it anyways"	4	1107
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"when there was a skunk around here I put a thing on my nose"	14	1108
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I'm gonna take that off"	6	1109
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"is this still on"	4	1110
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well would you believe an airplane"	6	1111
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"on the moon"	3	1112
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"that's what I did at church"	7	1113
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"here"	1	1114
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I know"	2	1115
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yeah"	1	1116
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"that barrel ride"	3	1117
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1118
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"right here"	2	1119
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"worse"	1	1120
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I can break this"	4	1121
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"more"	1	1122
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"no"	1	1123
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I pretended like there was a skunk"	7	1124
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"it's not worse"	4	1125
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"it's more"	3	1126
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"is there gonna be a movie"	6	1127
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"no"	1	1128
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"mm"	1	1129
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no hey"	2	1130
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"now for sure it's not worse"	7	1131
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	1132
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I got all these for the price of one that's right"	12	1133
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mop the floor"	3	1134
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"ah"	1	1135
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh read it"	3	1136
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1137
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"mm"	1	1138
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no we just saw ourselves"	5	1139
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"what's that stuff"	4	1140
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"gee"	1	1141
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"look how much I got just in one"	8	1142
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yes yes yes yes yes"	5	1143
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	1144
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"but Mama"	2	1145
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"mom that's almost half of them"	7	1146
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I don't remember it but I really liked it"	10	1147
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yes yes yes"	3	1148
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I know"	2	1149
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"remember that the uh um"	5	1150
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"vacuum the floor"	3	1151
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no no no no"	4	1152
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"mhm"	1	1153
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	1154
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and dust the table"	4	1155
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I'm winning"	3	1156
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"Joel did"	2	1157
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"no I just don't lose"	6	1158
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"rocks"	1	1159
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"pumper cars"	2	1160
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1161
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and the kitten in the chair"	6	1162
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"uh huh"	2	1163
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I'm winning"	3	1164
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well it might've been bumper heads"	7	1165
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"oh"	1	1166
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"last Christmas um Santa Claus went to family night"	9	1167
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"help put in your dirty clothes in the laundry room"	10	1168
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and and they're something to eat too"	8	1169
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I'm next"	3	1170
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	1171
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"which wouldn't be as fun as bumper cars"	9	1172
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"one two three four five"	5	1173
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"think you'll get it"	5	1174
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"do the rest of them"	5	1175
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	1176
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh huh"	2	1177
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"um"	1	1178
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	1179
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"yeh"	1	1180
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"Santa Claus came"	3	1181
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I don't know"	4	1182
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	1183
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"wouldn't you believe have a fun time"	8	1184
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh I want a ham sandwich a turkey sandwich"	9	1185
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"mhm"	1	1186
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I eat this one"	4	1187
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeh"	1	1188
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I've got twenty one"	5	1189
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"what"	1	1190
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	1191
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I can always hold on"	5	1192
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"nineteen"	1	1193
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what did I do that was fun"	7	1194
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"xxx you go first"	4	1195
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"no twenty"	2	1196
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"cheese mustard and mayonnaise"	4	1197
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"but barely"	2	1198
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"gee"	1	1199
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I had a fun time that was fun"	8	1200
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I'm winning"	3	1201
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"go to the beach"	4	1202
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1203
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	1204
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yes"	1	1205
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I have both of the jokers"	6	1206
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"two"	1	1207
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I'm winning"	3	1208
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"turkey"	1	1209
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"little ones"	2	1210
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I saw when I first saw this one I thought this one is cherry"	14	1211
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"there's nothing to tell about the bus"	8	1212
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	1213
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"what do I have"	4	1214
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1215
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"no I only have that on Wednesday"	7	1216
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"swim"	1	1217
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I know but I'm winning"	6	1218
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"apple juice"	2	1219
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"do you have_to ask me so easy questions"	9	1220
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I put the monkey down"	5	1221
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"but he got toys"	4	1222
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	1223
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I'm winning aren't I"	6	1224
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"go sailing me dig in the holes"	7	1225
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I forgot"	2	1226
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"that's right"	3	1227
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"not with pancakes no way"	5	1228
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"boy am I winning"	4	1229
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I dig"	2	1230
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"and he got peppermint patties"	5	1231
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"xxx"	1	1232
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"that's not very hard twelve"	6	1233
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1234
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"Sassie Sassie"	2	1235
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"he liked them"	3	1236
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"what is this"	3	1237
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"shells"	1	1238
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"with animals in them"	4	1239
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"he always called"	3	1240
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and little bugs in them"	5	1241
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"oh yeah"	2	1242
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1243
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"fifteen"	1	1244
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um hm"	2	1245
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I think I won"	4	1246
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"what"	1	1247
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I don't know"	4	1248
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"Gretchen's dog"	3	1249
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"did I"	2	1250
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"xxx"	1	1251
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"did I"	2	1252
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"no"	1	1253
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"xxx"	1	1254
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I don't know"	4	1255
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	1256
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"twenty"	1	1257
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	1258
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"you have a wabbit"	4	1259
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"while they're in sand put water in a bucket xxx the sand and then they'll go under"	19	1260
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"oh"	1	1261
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"okay you have twenty two"	5	1262
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"um what kind"	3	1263
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"a mosquito"	2	1264
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"ah"	1	1265
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"black"	1	1266
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what"	1	1267
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"okay seventeen"	2	1268
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I think I have twenty two"	6	1269
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"black"	1	1270
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	1271
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"twenty five"	2	1272
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"black"	1	1273
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I don't remember"	4	1274
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"he might've come that night on Christmas night and saw we weren't there"	15	1275
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I don't know"	4	1276
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"so it's a tie"	5	1277
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"thirty"	1	1278
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"xxx it's white"	4	1279
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"this game's going real fast"	6	1280
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"no it was wavy"	4	1281
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"that big"	2	1282
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"no"	1	1283
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"I think I won"	4	1284
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"one time it rained and a woosh"	7	1285
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"wait"	1	1286
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no that big"	3	1287
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"cause we were at grandmother's"	6	1288
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"wait"	1	1289
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I went under the wave"	5	1290
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"fifteen"	1	1291
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I don't know"	4	1292
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1293
+"Eng-NA"	"Warren"	"Bill"	"male"	74	6401	"because I got"	3	1294
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"and I gave one to everybody"	6	1295
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	1296
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"snake"	1	1297
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"draw"	1	1298
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"no"	1	1299
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"uh huh"	2	1300
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I went toot toot"	4	1301
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"that had black one and a white one"	8	1302
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"put the horses away"	4	1303
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"most of the time she sleeps"	6	1304
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"help make sandwiches"	3	1305
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"draw"	1	1306
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I don't know"	4	1307
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeh"	1	1308
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I don't know"	4	1309
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"who knows"	2	1310
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"put jelly peanut+butter two loaves of bread cut it"	10	1311
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1312
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"that's because he's always watching you"	8	1313
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	1314
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"what's a water moccasin"	5	1315
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"set the table dry the dishes"	6	1316
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"she's not a baby"	5	1317
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"make a pie"	3	1318
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"help clean up for bed"	5	1319
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yeah"	1	1320
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and go to bed"	4	1321
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"but not in our not in the Murphy Candler park"	10	1322
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what's a thousand times a thousand times a thousand"	10	1323
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"tiger"	1	1324
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"uhhuh"	1	1325
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"funny"	1	1326
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"she goes in a cradle and he goes in a big bed"	12	1327
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yes"	1	1328
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"lion"	1	1329
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"no"	1	1330
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"what"	1	1331
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I'm not telling because I don't know"	9	1332
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I don't know oh"	5	1333
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"a big bed"	3	1334
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"xxx"	1	1335
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I don't know"	4	1336
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I don't either"	4	1337
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"oh"	1	1338
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what's a thousand times a thousand times a thousand times a thousand times a thousand times a thousand"	19	1339
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"Amy's asleep"	3	1340
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"what's a bit"	4	1341
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I know"	2	1342
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"mm"	1	1343
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I forgot"	2	1344
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"what's bit"	3	1345
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"xxx"	1	1346
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yes"	1	1347
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"what"	1	1348
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"Christopher"	1	1349
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I don't know"	4	1350
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"ah"	1	1351
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"oh"	1	1352
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and"	1	1353
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"okay what happened"	3	1354
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I know"	2	1355
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"hm"	1	1356
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"me and um Charles did one time and we found two worms"	12	1357
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"oh"	1	1358
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I don't know"	4	1359
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"Betsy"	1	1360
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what's a billion times a thousand"	7	1361
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"oh is he going to see they"	7	1362
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"a big cwokodile"	3	1363
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1364
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"sold some stuff"	3	1365
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"two days one two days"	5	1366
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"hm"	1	1367
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"nothing"	1	1368
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"sold some jelly+beans and some koolaid"	7	1369
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what"	1	1370
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh huh"	2	1371
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"we didn't even go outside"	6	1372
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1373
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"sold"	1	1374
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"what's a plover"	4	1375
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"one two um Charles and me trying to dig some worms and we find two one day and another day"	20	1376
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what"	1	1377
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"can't you hear"	4	1378
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"a tape recorder"	3	1379
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"now can I"	3	1380
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I said they sold jelly+beans and koolaid"	8	1381
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"we made pictures"	3	1382
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I got one card"	4	1383
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and we played with blocks"	5	1384
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"three days"	2	1385
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"you're weird"	3	1386
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"because I have_to"	4	1387
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"Dad"	1	1388
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"bumble bee"	2	1389
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"um a cave"	3	1390
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I don't know"	4	1391
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1392
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"no"	1	1393
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"they just wanted to sell the stuff"	7	1394
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"uhuh"	1	1395
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"why don't you just ask me some questions about them if I get them"	15	1396
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um hm"	2	1397
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yes"	1	1398
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"well um"	2	1399
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I know it"	3	1400
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"where is my picture"	4	1401
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"no"	1	1402
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"me and Kim um buyed it twice"	7	1403
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"this one"	2	1404
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"sand"	1	1405
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"uh Laura and David and I don't"	8	1406
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"there was a design"	4	1407
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"buyed it twice"	3	1408
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I don't know"	4	1409
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1410
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and I think I left it at church"	8	1411
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"Tybee island"	2	1412
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"cough cough in our house and parents colored lines who tell you with twelve little girls and two straight lines they brush their teeth wait"	25	1413
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I don't know"	4	1414
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"oh"	1	1415
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1416
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I hate to do this in front of two people"	10	1417
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"and two girls and two boys"	6	1418
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1419
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	1420
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"brush their bread and brush their teeth and went to bed"	11	1421
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yes you do"	3	1422
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"xxx"	1	1423
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1424
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"um I made a doggie and dots"	7	1425
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh this side not that side"	6	1426
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"they frowned at xxx the and frowned at the bed"	10	1427
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"and um there's this place that we dig and when it's all the way down there and can't come back up and back all fixed up"	29	1428
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"because"	1	1429
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"our doggie"	2	1430
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well everything on here"	4	1431
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and I made a boat"	5	1432
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	1433
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"this one"	2	1434
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"yeh"	1	1435
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"um spaceship"	2	1436
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"it's mm a beach where people go wading and jumping out_of their boats"	15	1437
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1438
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"and sometimes they will even say they left the house at half past nine"	14	1439
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"but he always push me down"	6	1440
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"oh"	1	1441
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"it was just a design"	5	1442
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"and I just um"	4	1443
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"it won't it won't shoot off what else"	10	1444
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh"	1	1445
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"okay"	1	1446
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"good morning children and sunshine the littlest one was married she was not afraid of mice"	16	1447
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and it was a different kind a design"	8	1448
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"nothing"	1	1449
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and sometime they jump on Daddy's xxx"	8	1450
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"nowhere right now"	3	1451
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I know it"	3	1452
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I just I just got on the grass so I wouldn't hurt myself"	14	1453
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"no"	1	1454
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"well not much"	3	1455
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"nowhere later"	2	1456
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and sometimes they hug their daddies xxx"	7	1457
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"um"	1	1458
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I can sing jingle bells"	5	1459
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"unless it has_to"	4	1460
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"she loved the xxx and she loved to smell nice"	10	1461
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1462
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I pushed him down first cause he was mean"	9	1463
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"that one"	2	1464
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"the zoo and the big lion said"	7	1465
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	1466
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"ya it would be it would just be off the base"	11	1467
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"poo+poo"	2	1468
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	1469
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and sometimes I'm gonna quit talking"	7	1470
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeh"	1	1471
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"the alphabet"	2	1472
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"you threw me"	3	1473
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1474
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I think he doesn't know about Jesus"	8	1475
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"frighten Mr xxx in the middle of the night Miss Correll turned on the light something is not right"	19	1476
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and I hurt my leg"	5	1477
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"no I want to play this one"	7	1478
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"Snoopy"	1	1479
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"because"	1	1480
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"no he's just resting"	5	1481
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I want I have play dis one"	7	1482
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I think he doesn't because he's too little"	10	1483
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yes yesterday"	2	1484
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"soon as Dr Turnstill"	4	1485
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"the dog"	2	1486
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"no I gonna play this one"	6	1487
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"no"	1	1488
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"because the teacher says if he doesn't if your next door neighbor doesn't know about Jesus ya know"	20	1489
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"she sat in bed Madaline sat in bed and cried and cried"	12	1490
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"help see if an enemy was blocking it over here and they needed to get and one of them needed to get to the spaceship they would hop in here and drive it over to here and hop out and hop in here and"	44	1491
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	1492
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	1493
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"soon as Dr Turnstill arrived he called Danten"	8	1494
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"just talk about it"	4	1495
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I went to a party at the library"	8	1496
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	1497
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I just don't want to"	6	1498
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"d a n"	3	1499
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"I don't know what else"	6	1500
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"ten six"	2	1501
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"huh"	1	1502
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh huh"	2	1503
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"nurse this is an a apen a appendix"	8	1504
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"xxx"	1	1505
+"Eng-NA"	"Warren"	"Mary"	"female"	54	6412	"yeh"	1	1506
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"xxx"	1	1507
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I can't remember"	4	1508
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeh"	1	1509
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"what story"	2	1510
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"why was you saying Mr Tell"	6	1511
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"which one"	2	1512
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um hm"	2	1513
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yes but that was"	4	1514
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"uh huh and they get up in the sky and find him then they"	14	1515
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"everybody was"	2	1516
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"huh"	1	1517
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	1518
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"had to cry there was not a single"	8	1519
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yesterday was yesterday"	3	1520
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"why did you"	3	1521
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"you know what"	3	1522
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	1523
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"him"	1	1524
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yes it was"	3	1525
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"dry eye"	2	1526
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"uh huh"	2	1527
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"twelve"	1	1528
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"she was wrapped up in a blanket"	7	1529
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	1530
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"or her or whatever"	4	1531
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"don't bother me"	4	1532
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"no twelve books in twelve um you read twelve books"	10	1533
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"there's three of them"	5	1534
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"safe and warm she I what"	6	1535
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"don't bother me"	4	1536
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"what is that"	3	1537
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I don't know hey who put on like this"	10	1538
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"in a week"	3	1539
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yep"	1	1540
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I was in a car"	5	1541
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	1542
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"you said I thought you weren't friends"	8	1543
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I want ta a number"	5	1544
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh huh you have_to"	5	1545
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"with"	1	1546
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I didn't Molly I think I do know"	9	1547
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I wait till he says"	5	1548
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"a red light shining in the night"	7	1549
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh huh"	2	1550
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"we're not"	3	1551
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"and when I woke when I woke up there was stars in the room and there was a habit"	19	1552
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"David um Whitebine he's bad enough to do it this way"	12	1553
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"number twenty one"	3	1554
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"how come"	2	1555
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	1556
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"how come"	2	1557
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"he doesn't even have any lego"	7	1558
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"it can go fast like a shark"	7	1559
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"one"	1	1560
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"which one"	2	1561
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"oh Madeline soon ate and drank and noticed there was a prank on the habit"	15	1562
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"in the living room"	4	1563
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"well you naughty boy"	4	1564
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"you seen it you seen it"	6	1565
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"huh"	1	1566
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"there was a shape of a rabbit"	7	1567
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"no I think that's for"	6	1568
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeah and"	2	1569
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where is i"	3	1570
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"about"	1	1571
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"oh"	1	1572
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"you were floating and then I pushed down on his stomach and he went under"	15	1573
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"when he gonna take it Daddy"	6	1574
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"birds"	1	1575
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"flowers and sunshine"	3	1576
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well I almost fell asleep"	5	1577
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"Miss Corballis said wouldn't this be a nice day to go visit madam"	14	1578
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and that's what I'm gonna do today"	9	1579
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I'm not telling you"	5	1580
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"well where is number sixteen"	5	1581
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"rest time"	2	1582
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"and that's a and he I think he's in a wheelchair"	13	1583
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"right under mouse right here"	5	1584
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"hmhm"	1	1585
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"playing fast"	2	1586
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"Daddy you know what"	4	1587
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where is under mouse"	4	1588
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"something fishy"	2	1589
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"how come you're heavier and you can float and I'm not heavier and I can't float"	19	1590
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I know it"	3	1591
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well we were chasing each_other as usual"	8	1592
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"smelling flowers"	2	1593
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I got it out_of the easy books"	8	1594
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"Denton"	1	1595
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	1596
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"from two to four"	4	1597
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"no"	1	1598
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh huh"	2	1599
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what"	1	1600
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"what's that"	3	1601
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I don't know"	4	1602
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I do"	2	1603
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"outside the door and they tiptoed solemn"	7	1604
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh huh"	2	1605
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"no"	1	1606
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"and they tiptoed inside solemn face"	6	1607
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"um we were having races"	5	1608
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"can you walk on water"	5	1609
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"small back wheel"	3	1610
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"when they walked in they"	5	1611
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where fifteen"	2	1612
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"and you read all the rest"	6	1613
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"you can surf on water"	5	1614
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no big one"	3	1615
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well sort of little bit we were chasing we were chasing each_other just a little bit the girls were chasing the boys a little bit I mean the boys were chasing the girls a little bit"	37	1616
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"said"	1	1617
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"right here"	2	1618
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"if it's real wavy"	5	1619
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where number twenty one"	4	1620
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"ah"	1	1621
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"you read all the pages"	5	1622
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where number twenty seven"	4	1623
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"the case of the flaming feather"	6	1624
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"toys"	1	1625
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"candy"	1	1626
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where the beach ball"	4	1627
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1628
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"doll+house"	2	1629
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"xxx"	1	1630
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"right here"	2	1631
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"xxx"	1	1632
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"you hurt my leg"	4	1633
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1634
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"was"	1	1635
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1636
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"because you threw me in and I didn't want ya to"	12	1637
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"um we would let them go"	6	1638
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"on her stomach there happened to be a scar"	9	1639
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no"	1	1640
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"no"	1	1641
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"a five year old"	4	1642
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"I don't want ta talk"	6	1643
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"scar"	1	1644
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"yes we did yesterday but not today"	7	1645
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"nothing"	1	1646
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"oh no"	2	1647
+"Eng-NA"	"Warren"	"George"	"male"	59	6405	"no I wanna listen to"	5	1648
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"somebody's at the window"	5	1649
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um um"	2	1650
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"goodbye they said and they left in rain they brushed their teeth from they brushed their teeth and went to bed"	21	1651
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"Matthew's"	2	1652
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I think it's a honenut bee"	7	1653
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"alright"	1	1654
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"Joel's"	2	1655
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where is it"	3	1656
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"it's a hornet nut bee"	6	1657
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"of a baby gorilla"	4	1658
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"yes"	1	1659
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"well that's all for today"	6	1660
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"um by today I think we did play today by today Wyatt's team won our team lost"	18	1661
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"Miss Corballis turned on the light and said something is not right"	12	1662
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um um"	2	1663
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"oh"	1	1664
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"Bowsinger"	1	1665
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where twelve"	2	1666
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"bought sausage and biscuits"	4	1667
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"not right she ran faster and faster"	7	1668
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"sixty four"	2	1669
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"yes"	1	1670
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"what is the matter children"	5	1671
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where"	1	1672
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"uh huh"	2	1673
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"we want our appendix out too"	6	1674
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"ate them"	2	1675
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I only made one point"	5	1676
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"right here"	2	1677
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"good_night girls"	3	1678
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"breakfast"	1	1679
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"top of mouse"	3	1680
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"little girls"	2	1681
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeh ate them for breakfast"	5	1682
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"no we're not allowed to do that"	8	1683
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"right here"	2	1684
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um um"	2	1685
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"um to de refrigerater store"	5	1686
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"someone might get hit in the head"	7	1687
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh huh"	2	1688
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"at dat Owen park"	4	1689
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"when's he gonna say this one"	7	1690
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"to get parts for de refrigerator"	6	1691
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"when he gonna say this one"	6	1692
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"uh huh"	2	1693
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"and she turned out the lights"	6	1694
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"um the xxx"	3	1695
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"for sure"	2	1696
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"when he gonna ask for a bear"	7	1697
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"the end"	2	1698
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"nope"	1	1699
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"why don't you ask"	5	1700
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um a picnic"	3	1701
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"three little"	2	1702
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeh"	1	1703
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"why don't you ask her"	6	1704
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yeah"	1	1705
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yep"	1	1706
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	1707
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"ask her"	2	1708
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where piggy bank"	3	1709
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I want to"	3	1710
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	1711
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and get chlorine for the swimming pool"	7	1712
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well when were you there"	5	1713
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"Morningside"	1	1714
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well then why don't you tell her about that part"	11	1715
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"Piggy bank"	2	1716
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"here"	1	1717
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeh and get chlorine for de Ace hardware"	8	1718
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"not read it look at it"	6	1719
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what do you mean I wasn't there three weeks"	10	1720
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"no for de swimming pool sometimes"	6	1721
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"if they have it there"	5	1722
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"Morningside first grade"	3	1723
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"where"	1	1724
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I want to talk about it"	6	1725
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"kindergarten"	1	1726
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"well grocery store"	3	1727
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well the time before that or is that getting too far back to remember"	14	1728
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and the drugstore"	3	1729
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"what bebo"	2	1730
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um um"	2	1731
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"uh huh"	2	1732
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I don't really know"	5	1733
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I'm not telling you"	5	1734
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	1735
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"talk about what"	3	1736
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"anything that I am interested in"	6	1737
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"pig"	1	1738
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"because"	1	1739
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"just because"	2	1740
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	1741
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	1742
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"ya"	1	1743
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeah"	1	1744
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	1745
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"um to my until my mind says yes that's right"	11	1746
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"a weasel"	2	1747
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"well tch um tch"	4	1748
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I don't want to uh uh"	7	1749
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"yeah"	1	1750
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"mm a a rat"	4	1751
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"want the one that have one of dese"	8	1752
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1753
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"well I don't know"	5	1754
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1755
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"uh oh"	2	1756
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"yes"	1	1757
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"you have_to come if you're going to school there"	11	1758
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"what did that mean"	4	1759
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"the rat"	2	1760
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"because I've never been there"	6	1761
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"now what can I talk about"	6	1762
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"why"	1	1763
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"holding his hand out"	4	1764
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"and you were being wough"	5	1765
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"no"	1	1766
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"xxx"	1	1767
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"why were you"	3	1768
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"xxx I'm not gonna say it"	7	1769
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"they're going to Glenn"	5	1770
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"mm rope"	2	1771
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"huh"	1	1772
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"oh straw"	2	1773
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well the one that we just got out"	8	1774
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"why were you"	3	1775
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1776
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	1777
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"oh I yeh they are going to but they're in Florida"	12	1778
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	1779
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"it's not that important that I don't wanna say"	11	1780
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"give it to the pig"	5	1781
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"okay"	1	1782
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I'll find it"	4	1783
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh huh"	2	1784
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeh"	1	1785
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yes"	1	1786
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"eat lunch"	2	1787
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I don't know"	4	1788
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no they gave me um them"	6	1789
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I think"	2	1790
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"ya this this this"	4	1791
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I bought them"	3	1792
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"or cold lunch"	3	1793
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"a b c d"	4	1794
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"four weeks"	2	1795
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yes"	1	1796
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"straw"	1	1797
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"ow"	1	1798
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"a b c a b c a b c a b c"	12	1799
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"nothing"	1	1800
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um hm"	2	1801
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"to build a house"	4	1802
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"a b c a b c"	6	1803
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeh"	1	1804
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"jingle bells jingle bells"	4	1805
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"down here"	2	1806
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeh"	1	1807
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	1808
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"she's going to Morningside"	5	1809
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I'm through reading a book"	6	1810
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"sticks"	1	1811
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	1812
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"sticks"	1	1813
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"ya"	1	1814
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"mhm"	1	1815
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"what"	1	1816
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"a b c d e f h h a j k l m"	13	1817
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"give it to the pig"	5	1818
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I did I did"	4	1819
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yes"	1	1820
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"true"	1	1821
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yeah"	1	1822
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"n d o p q d s t u v w o v o"	14	1823
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"yes"	1	1824
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"build a house"	3	1825
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"um yeh"	2	1826
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"X_man"	2	1827
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"oh"	1	1828
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"we stayed in bed with some toys"	7	1829
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"build a house"	3	1830
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"one plus one equals two"	5	1831
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"four plus four four plus four equals eight"	8	1832
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"four"	1	1833
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"w w s y and z"	6	1834
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"um the wolf is going to come"	7	1835
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"okay hold it"	3	1836
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"do they have_to go in with another word"	9	1837
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"eight plus eight equals sixteen"	5	1838
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"turn the page"	3	1839
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"now my abc"	3	1840
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I don't know"	4	1841
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"please"	1	1842
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"tell me what you think of me"	7	1843
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"four"	1	1844
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"five plus five equals ten"	5	1845
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"the wolf's there"	4	1846
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I think it was eleven"	5	1847
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"ten plus ten equals twenty"	5	1848
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"knocking on the door"	4	1849
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"so where would it go"	5	1850
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"little pig little pig let me come in"	8	1851
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"not by the hair on my chinnie chin chin"	9	1852
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"what is subtract and multiply"	5	1853
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"eleven"	1	1854
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I'll huff and I'll puff and I'll blow your house down"	14	1855
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"a b c d e f g h i j k l m n o p abc tv lamb"	19	1856
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"where"	1	1857
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"here"	1	1858
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh"	1	1859
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"oh well it's times"	5	1860
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"that one"	2	1861
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh"	1	1862
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I don't know anything about it"	7	1863
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"that wouldn't hook up with another word"	8	1864
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"here this go and her he come right now"	9	1865
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"is it one x like one"	6	1866
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"the pig um a wall bricks house"	7	1867
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"this little lamb and I go"	6	1868
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"he little boy"	3	1869
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yes"	1	1870
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"I think"	2	1871
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and not and don't forget it"	7	1872
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"he a brown"	3	1873
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"he's going to give the pig some bricks"	9	1874
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1875
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yeh"	1	1876
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"we just stayed in bed till they till they came were awake"	12	1877
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"nope"	1	1878
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"king"	1	1879
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"because you get too dirty"	5	1880
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"uh huh"	2	1881
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I play dis"	3	1882
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"do you mean like this"	5	1883
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and I like getting dirty"	5	1884
+"Eng-NA"	"Warren"	"Gina"	"female"	37	6406	"I play"	2	1885
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"nobody give you bricks"	4	1886
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"we got up and watched cartoons in a few minutes when they were still in bed"	16	1887
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"stay home"	2	1888
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"buy"	1	1889
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"soccer lessons"	2	1890
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yes"	1	1891
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"storm"	1	1892
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"and when they got when her mom got up we were still watching cartoons"	14	1893
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"gymnastics"	1	1894
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"the wolf blows so hard that he blows right to the wooden house"	13	1895
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"five letters I think I see one"	7	1896
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"turn the page please"	4	1897
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"oh and the brother got in"	6	1898
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"no"	1	1899
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"right here"	2	1900
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1901
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"the brother got in"	4	1902
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"soccer"	1	1903
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"it's not on their channels"	6	1904
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"m"	1	1905
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"the wolf"	2	1906
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I don't like ballet"	5	1907
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"I don't wanna take ballet"	6	1908
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"there's storm"	3	1909
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and don't forget it"	5	1910
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what does it say"	4	1911
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"because they don't have cable"	6	1912
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"oh blew the house down"	5	1913
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"what does teens mean"	4	1914
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1915
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yeh"	1	1916
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"because"	1	1917
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"it takes too long"	4	1918
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yeh he huffed and he huffed the house down"	9	1919
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yes"	1	1920
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"it's on ten"	4	1921
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"little pig little pig let me come in"	8	1922
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well why does it have that"	6	1923
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"but I don't like doing"	6	1924
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"it cause I always forget the positions"	7	1925
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"not by the hair of my chinnie chin chin"	9	1926
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"yeh but it's not on ten at their house"	10	1927
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"and I'll huff and I'll puff and I'll blow your house down"	15	1928
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1929
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"well maybe some of them are in their teens"	9	1930
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"clap"	1	1931
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	1932
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and everyone was going like this"	6	1933
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"turn it back"	3	1934
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"turn it please"	3	1935
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"that way"	2	1936
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"one more letter"	3	1937
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"he puffed so hard that he blew his brothers right to the brick house door"	15	1938
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"on eleven"	2	1939
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"we checked on every channel and it wasn't on any channel"	12	1940
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"well yes"	2	1941
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"yes"	1	1942
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"his brothers hurried and let him in"	7	1943
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"here"	1	1944
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"teens"	1	1945
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"hurried"	1	1946
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and not for ballet"	4	1947
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"pig hurried and let the pigs in hurried and"	9	1948
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and don't forget it"	5	1949
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"cause I'm not having ballet lessons"	7	1950
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"hey hurried"	2	1951
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"never again in my life"	5	1952
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"one two three four five six seven"	7	1953
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"he hurried and went in the third little pigs"	9	1954
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"it comes on a eight but it just wasn't on"	11	1955
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"open the door"	3	1956
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"not anymore"	2	1957
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"would that be the bottom one"	6	1958
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"well she might not do it at the same place"	10	1959
+"Eng-NA"	"Warren"	"Louise"	"female"	63	6411	"uh uh"	2	1960
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"okay now let's find"	5	1961
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"uh huh"	2	1962
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"not at a xxx"	4	1963
+"Eng-NA"	"Warren"	"Sandra"	"female"	74	6414	"and I'm not going to take ballet lessons"	9	1964
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"maybe this one"	3	1965
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"little pig little pig let me come in"	8	1966
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"not by the hair of my chinnie chin chin"	9	1967
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I'll huff and I'll puff and I'll blow your house down"	14	1968
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"how do you spell that"	5	1969
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"but he didn't blow the house down"	8	1970
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"scenario"	1	1971
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"Bill Maxwell"	2	1972
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I don't know"	4	1973
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"Maxwell"	1	1974
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"why won't you write it down"	7	1975
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"he works he plays Bill Maxwell on the greatest american hero"	11	1976
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"Bill Maxwell that's the funny guy"	7	1977
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"Mommy"	1	1978
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"talk about the greatest american hero"	6	1979
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"um"	1	1980
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"yes"	1	1981
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"six"	1	1982
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"Bill Maxwell"	2	1983
+"Eng-NA"	"Warren"	"John"	"male"	69	6409	"I can't read it"	5	1984
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"only I like scenario best about it"	7	1985
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I like the word"	4	1986
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I just like it"	4	1987
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I like scenario and Bill Maxwell"	6	1988
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I know and once on the greatest american hero Ralph said scenario and Bill fell asleep and then he said scenario again and he waked up and then he said it again and he falls asleep again he said it again and he waked up"	45	1989
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I guess he got tired of the word"	8	1990
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no no"	2	1991
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	1992
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"uh huh"	2	1993
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"he did not"	3	1994
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	1995
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"what happened last night um"	5	1996
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"um me forgot about it"	5	1997
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	1998
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no"	1	1999
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"what"	1	2000
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"he um he"	3	2001
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"no yes"	2	2002
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"I forgot"	2	2003
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"oh saved him"	3	2004
+"Eng-NA"	"Warren"	"Susan"	"female"	73	6416	"the boy was cold and he fell asleep"	8	2005
